@@ -4,7 +4,7 @@
         <title>Hello wordl</title>
     </head>
     <body>
-        <h1>นายภานุวัฒน ก้องจันทร์สว่าง</h1>
+        <h1>นายภานุวัฒน์ ก้องจันทร์สว่าง</h1>
         <p>ชื่อเล่น:เมฆ</p>
         <img src="kai.jpg">
         <img src="kfc.jpg">
