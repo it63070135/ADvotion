@@ -1,11 +1,18 @@
 body {
   margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/pic/first_page/bg.png");
+  font-family: "Chonburi", cursive;
 }
 
 .slide {
   width: 100vw;
   height: 100vh;
   scroll-snap-align: center;
+  background-image: url("/pic/first_page/blue_ground.png");
+  background-size: 100vw 100vh;
+  background-position: left bottom;
 }
 .wrapper {
   display: flex;
@@ -13,6 +20,41 @@ body {
   width: 400vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  background-image: url("/pic/first_page/blue_city.png");
+  background-size: auto 51%;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.wrapper02 {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  background-image: url("/pic/first_page/blue_tree.png");
+  background-size: auto 43%;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.wrapper03 {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  /* background-image: url("/pic/first_page/blue_firstpage_ground.png"); */
+  background-size: auto 100%;
+  background-repeat: no-repeat, repeat-x;
+  background-position: left bottom;
+}
+
+.blue-first-bg {
+  width: 100vw;
+  min-width: 2000px;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.blue-city {
+  position: absolute;
 }
 
 .outer-wrapper {
@@ -22,21 +64,18 @@ body {
   transform-origin: top left;
   overflow-y: auto;
   overflow-x: hidden;
-  position: absolute;
+  /* position: absolute; */
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .one {
-  background: #efdefe;
 }
 .two {
-  background: #a3f3d3;
 }
 .three {
-  background: #0bbaa0;
 }
 .four {
-  background: #00dfdf;
 }
 
 ::-webkit-scrollbar {
@@ -51,4 +90,41 @@ body {
   transform: translate(-50%, -50%);
   position: relative;
   cursor: pointer;
+}
+
+.back-background {
+  position: absolute;
+}
+.header {
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  left: 50vw;
+  transform: translateX(-50%);
+  font-size: 25px;
+  margin-top: 1%;
+}
+.iconpage {
+  width: 40px;
+  transform: translateY(10px);
+}
+h1 {
+  font-size: 65px;
+}
+.start-text {
+  position: absolute;
+  transform: translate(100%, 20%);
+}
+.icon-start {
+  transform: translateY(30px);
+}
+.dog-umbella {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 10vw;
+  min-width: 200px;
+  left: 35vw;
+  bottom: 8%;
+  transform: translate(-50%, -50%);
 }
