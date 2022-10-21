@@ -5,6 +5,7 @@ body {
   background-image: url("pic/first_page/bg.png");
   font-family: "Chonburi", cursive;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .slide {
@@ -18,7 +19,7 @@ body {
 .wrapper{
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 500vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   background-image: url("pic/first_page/blue_city.png");
@@ -29,7 +30,7 @@ body {
 .wrapper02 {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 500vw;
   background-image: url("pic/first_page/blue_tree.png");
   background-size: auto 43%;
   background-repeat: repeat-x;
@@ -39,7 +40,7 @@ body {
 .wrapper03 {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 500vw;
   background-size: auto 100%;
   background-repeat: no-repeat, repeat-x;
   background-position: left bottom;
@@ -47,7 +48,6 @@ body {
 
 .blue-first-bg {
   width: 100vw;
-  min-width: 2000px;
   height: 100vh;
   position: absolute;
   opacity: 0.7;
@@ -109,10 +109,11 @@ h1 {
 }
 .start-text {
   position: absolute;
-  transform: translate(100%, 20%);
+  transform: translate(69%, 30%);
 }
 .icon-start {
-  transform: translateY(30px);
+  width: 25%;
+  transform: translateY(20px);
 }
 .menu{
   position:fixed;
@@ -124,4 +125,32 @@ h1 {
 {
   height: 70px;
   width: 300px;
+}
+.nextslide{
+  position:fixed;
+  right:2.5vw;
+  top:50vh;
+}
+.btnnextslide{
+  position:absolute;
+  z-index: 20;
+  height:auto;
+  width: 2.5vw;
+  transform: translate(-50%, -50%);
+  cursor:pointer;
+}
+.previousslide{
+  position:fixed;
+  left:2.5vw;
+  top:50vh;
+}
+.btnpreviousslide{
+  position:absolute;
+  z-index: 20;
+  height:auto;
+  width: 2.5vw;
+  transform: translate(-50%, -50%);
+  cursor:pointer;
+  visibility: hidden;
+  transform: rotate(180deg);
 }

@@ -1,12 +1,43 @@
+.slide2-text{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+  
+}
+.slide3-text{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+  
+}
+.slide4-text{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+  
+}
+.slide5-text{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+}
 .dog {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 10vw;
+  width: 8vw;
   height: auto;
-  min-width: 170px;
-  left: 40vw;
-  bottom:15vh;
+  min-width: 160px;
+  left: 38vw;
+  bottom:20vh;
   /*transform: translate(-50%, -50%);*/
 }
 
@@ -14,10 +45,40 @@
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 30vw;
+  width: 10vw;
   height: auto;
-  min-width: 520px;
-  left: 42vw;
-  bottom: 7vh;
+  min-width: 350px;
+  left: 47vw;
+  bottom: 18.5vh;
   /* transform: translate(-50%, -50%); */
 }
+
+.text-highlight{
+  color: #00A3DA;
+  display: inline-block;
+  font-size: 3.5vh;
+}
+
+.character16{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 12vw;
+  height: auto;
+  min-width: 30px;
+  left: 125vw;
+  bottom: 18.5vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.sign{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  min-width: 15vw;
+  left: 142vw;
+  bottom: 19.5vh;
+}
+
