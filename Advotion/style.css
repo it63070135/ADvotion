@@ -25,7 +25,7 @@ body {
   background-image: url("pic/first_page/blue_city.png");
   background-size: auto 51%;
   background-repeat: repeat-x;
-  background-position: bottom;
+  background-position: left bottom;
 }
 .wrapper02 {
   display: flex;
@@ -60,7 +60,6 @@ body {
   transform-origin: top left;
   overflow-y: auto;
   overflow-x: hidden;
-  /* position: absolute; */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
@@ -94,7 +93,7 @@ body {
 .header {
   position: fixed;
   text-align: center;
-  width: 50%;
+  width: 100vw;
   left: 50vw;
   transform: translateX(-50%);
   font-size: 25px;
@@ -121,10 +120,21 @@ h1 {
   top:3vh;
   width: 3.5vh;
 }
+#carouselDots{
+  height: auto;
+  width: 229px;
+}
 .carousel
 {
-  height: 70px;
-  width: 300px;
+  position:fixed;
+  /*display: block;
+  margin:auto;*/
+  top:12vh;
+  left:50vw;
+  height: auto;
+  width: 229px;
+  transform: translateX(-50%);
+
 }
 .nextslide{
   position:fixed;
@@ -153,4 +163,8 @@ h1 {
   cursor:pointer;
   visibility: hidden;
   transform: rotate(180deg);
+}
+.dropdown{
+  float: right;
+  position: absolute;
 }
