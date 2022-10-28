@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("pic/first_page/bg.png");
+  font-family: "Chonburi", cursive;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  background-image: url("pic/fifth_page/floor.png");
+  background-size: 100vw 100vh;
+  background-position: left bottom;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: url("pic/fifth_page/city.png");
+  background-size: auto 51%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+.wrapper02 {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  background-image: url("pic/fifth_page/envi.png");
+  background-size: auto 43%;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.wrapper03 {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  background-size: auto 100%;
+  background-repeat: no-repeat, repeat-x;
+  background-position: left bottom;
+}
+
+.blue-first-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.one {
+}
+.two {
+}
+.three {
+}
+.four {
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btnNext {
+  width: 100px;
+  height: 100px;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
+}
+
+.back-background {
+  position: absolute;
+}
+.header {
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  left: 50vw;
+  transform: translateX(-50%);
+  font-size: 25px;
+  margin-top: 1%;
+}
+.iconpage {
+  width: 40px;
+  transform: translateY(10px);
+}
+h1 {
+  font-size: 65px;
+}
+.start-text {
+  position: absolute;
+  transform: translate(69%, 30%);
+}
+.icon-start {
+  width: 25%;
+  transform: translateY(20px);
+}
+.menu {
+  position: fixed;
+  right: 3vw;
+  top: 3vh;
+  width: 3.5vh;
+}
+#carouselDots {
+  height: auto;
+  width: 229px;
+}
+.carousel {
+  position: fixed;
+  /*display: block;
+    margin:auto;*/
+  top: 12vh;
+  left: 50vw;
+  height: auto;
+  width: 229px;
+  transform: translateX(-50%);
+}
+.nextslide {
+  position: fixed;
+  right: 2.5vw;
+  top: 50vh;
+}
+.btnnextslide {
+  position: absolute;
+  z-index: 20;
+  height: auto;
+  width: 2.5vw;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.previousslide {
+  position: fixed;
+  left: 2.5vw;
+  top: 50vh;
+}
+.btnpreviousslide {
+  position: absolute;
+  z-index: 20;
+  height: auto;
+  width: 2.5vw;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  visibility: hidden;
+  transform: rotate(180deg);
+}
+.dropdown {
+  float: right;
+  position: absolute;
+}
