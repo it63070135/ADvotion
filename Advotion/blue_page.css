@@ -35,7 +35,6 @@
   z-index: 5;
   width: 8vw;
   height: auto;
-  min-width: 160px;
   left: 38vw;
   bottom:20vh;
   /*transform: translate(-50%, -50%);*/
@@ -45,10 +44,9 @@
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 10vw;
+  width: 20vw;
   height: auto;
-  min-width: 350px;
-  left: 47vw;
+  left: 45vw;
   bottom: 18.5vh;
   /* transform: translate(-50%, -50%); */
 }
@@ -120,7 +118,7 @@
   left: 251vw;
   bottom: 20vh;
 }
-.character29{
+.character33{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -153,8 +151,73 @@
   transform: scaleX(-1);
 }
 
+.tvdigitalshop{
+  position:absolute;
+  bottom:20vh;
+  left:430vw;
+}
+.billboard{
+  position:absolute;
+  bottom:20vh;
+  left:448vw;
+}
+.vintagetv{
+  position:absolute;
+  bottom:24.5vh;
+  left:467vw;
+}
+
+.character30{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 10vw;
+  height: auto;
+  left: 263vw;
+  bottom: 7vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#character30_1{
+  left:455vw;
+}
+#character30_2{
+  left:461vw;
+  bottom:3vh;
+}
+
+
+.character29{
+  left:420vw;
+  position: absolute;
+  width: 15vw;
+  transform:scaleX(-1);
+  bottom:-17vh;
+}
+
 /* for phone */
 @media screen and (max-width: 992px) {
+  .dog {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 25vw;
+    height: auto;
+    left: 23vw;
+    bottom:20vh;
+    /*transform: translate(-50%, -50%);*/
+  }
+  
+  .umbrella{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 60vw;
+    height: auto;
+    left: 27vw;
+    bottom: 20vh;
+    /* transform: translate(-50%, -50%); */
+  }
   .text-highlight{
     color: #00A3DA;
     display: inline-block;
@@ -217,7 +280,7 @@
     left: 252vw;
     bottom: 22vh;
   }
-  .character29{
+  .character33{
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
@@ -248,6 +311,78 @@
     bottom: -12vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+  }
+
+  .slide4-text{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
+    
+  }
+  /*Slide 5*/
+  .tvdigitalshop{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    position:absolute;
+    width: 50vw;
+    height: auto;
+    left: 403vw;
+    bottom: 23vh;
+  }
+  .billboard{
+    position:absolute;
+    width: 50vw;
+    height: auto;
+    left: 430vw;
+    bottom: 23vh;
+
+  }
+  .vintagetv{
+    position:absolute;
+    width: 20vw;
+    height: auto;
+    left: 475vw;
+    bottom: 23vh;
+
+  }
+  .character30{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 450vw;
+    bottom: 8vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  #character30_1{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    bottom: 8vh;
+    left: 450vw;
+  }
+  #character30_2{
+    bottom: 6vh;
+    left: 465vw;
+  }
+  .character29{
+    width: 40vw;
+    height: auto;
+    left: 415vw;
+    bottom: -10vh;
+    transform:scaleX(-1);
+  }
+  .slide5-text{
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 18%;
   }
 }
 

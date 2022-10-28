@@ -1,0 +1,29 @@
+
+.loader{
+    background-color: rgb(250, 250, 250);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform-style: preserve-3d;
+    z-index: 6969;
+    visibility: visible;
+  }
+  
+  .loaderHide {
+    background-color: rgb(250, 250, 250);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform-style: preserve-3d;
+    z-index: 6969;
+    animation: fadeOut 0.2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut {
+    100% {
+      background-color: transparent;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }

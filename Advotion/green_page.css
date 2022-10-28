@@ -26,32 +26,20 @@
   text-align: center;
   top: 18%;
 }
-.dog {
+.character12{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 8vw;
+  width: 12vw;
   height: auto;
-  min-width: 160px;
-  left: 38vw;
-  bottom: 20vh;
-  /*transform: translate(-50%, -50%);*/
+  min-width: 30px;
+  left: 30vw;
+  bottom: 18.5vh;
 }
 
-.umbrella {
-  transform-style: preserve-3d;
-  position: absolute;
-  z-index: 5;
-  width: 10vw;
-  height: auto;
-  min-width: 350px;
-  left: 47vw;
-  bottom: 18.5vh;
-  /* transform: translate(-50%, -50%); */
-}
 
 .text-highlight {
-  color: #00a3da;
+  color: #4abd68;
   display: inline-block;
   font-size: 3.5vh;
 }
@@ -79,36 +67,17 @@
     bottom: 19.5vh;
   } */
 
-.sign {
+.shop {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 15vw;
+  width: 25vw;
   height: auto;
-  left: 140.5vw;
+  left: 137vw;
   bottom: 20vh;
 }
-.character16 {
-  transform-style: preserve-3d;
-  position: absolute;
-  z-index: 5;
-  width: 12vw;
-  height: auto;
-  left: 130vw;
-  bottom: 10vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-.uncle {
-  transform-style: preserve-3d;
-  position: absolute;
-  z-index: 5;
-  width: 13vw;
-  height: auto;
-  left: 237vw;
-  bottom: 20vh;
-}
-.aunt {
+
+/*.aunt {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -116,27 +85,72 @@
   height: auto;
   left: 251vw;
   bottom: 20vh;
-}
+}*/
+
+/* slide 3 */
 .character29 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
   width: 14vw;
   height: auto;
-  left: 260vw;
-  bottom: 6vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  left: 230vw;
+  bottom: 20vh;
 }
-/* slide 3 */
-.uncle-4 {
+.newspaperShop {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 13vw;
+  width: 30vw;
   height: auto;
-  left: 343vw;
+  left: 340vw;
   bottom: 20vh;
+}
+.character33 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 22vw;
+  height: auto;
+  left: 247vw;
+  bottom: -25vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.Board{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 25vw;
+  height: auto;
+  left: 240vw;
+  bottom: 25vh;
+}
+.vintagetv{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 10vw;
+  height: auto;
+  left: 430vw;
+  bottom: 20vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.character30 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+}
+#character301 {
+  left: 435vw;
+  bottom: -3vh;
+}
+#character302 {
+  left: 443vw;
+  bottom: 0vh;
 }
 .character13 {
   transform-style: preserve-3d;
@@ -149,13 +163,46 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+.character11 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 17vw;
+  height: auto;
+  left: 315vw;
+  bottom: -9vh;
+}
+.uncleread {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 8vw;
+  height: auto;
+  left: 366vw;
+  bottom: 20vh;
+}
+.section-text{
+  color: #4abd68;
+
+}
 
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {
-    color: #00a3da;
+    color: #4abd68;
     display: inline-block;
     font-size: 2.5vh;
+  }
+  /* slide 1 */
+  .character12{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 35vw;
+    height: auto;
+    min-width: 30px;
+    left: 15vw;
+    bottom: 20vh;
   }
 
   /* slide 2 */
@@ -166,25 +213,14 @@
     text-align: center;
     top: 18%;
   }
-  .sign {
+  .shop {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 50vw;
+    width: 65vw;
     height: auto;
     left: 120vw;
     bottom: 22vh;
-  }
-  .character16 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 110vw;
-    bottom: 13vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
 
   /* slide 3 */
@@ -195,54 +231,104 @@
     text-align: center;
     top: 25%;
   }
-  .uncle {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 211vw;
-    bottom: 22vh;
-  }
-  .aunt {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 252vw;
-    bottom: 22vh;
-  }
   .character29 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 42vw;
+    width: 30vw;
     height: auto;
-    left: 263vw;
-    bottom: 7vh;
+    left: 210vw;
+    bottom: 20vh;
+  }
+  .Board{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 55vw;
+    height: auto;
+    left: 225vw;
+    bottom: 25vh;
+  }
+  .character33 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 240vw;
+    bottom: -5vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+
   /* slide 4 */
-  .uncle-4 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 331vw;
-    bottom: 22vh;
+  .slide4-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 18%;
   }
-  .character13 {
+  .newspaperShop {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 44vw;
+    width: 60vw;
     height: auto;
-    left: 300vw;
-    bottom: -12vh;
+    left: 316vw;
+    bottom: 25vh;
+  }
+  .character11 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 35vw;
+    height: auto;
+    left: 315vw;
+    bottom: 10vh;
+  }
+  .uncleread {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 18vw;
+    height: auto;
+    left: 368vw;
+    bottom: 25vh;
+  }
+
+  /* slide 5 */
+  .slide5-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
+  }
+  .vintagetv{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 25vw;
+    height: auto;
+    left: 440vw;
+    bottom: 23vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+  }
+  .character30 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 35vw;
+    height: auto;
+  }
+  #character301 {
+    left: 443vw;
+    bottom: 0vh;
+  }
+  #character302 {
+    left: 465vw;
+    bottom: 5vh;
   }
 }

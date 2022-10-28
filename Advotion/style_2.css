@@ -34,7 +34,7 @@ body {
   background-image: url("pic/second_page/envi.png");
   background-size: auto 43%;
   background-repeat: repeat-x;
-  background-position: bottom;
+  background-position: left bottom;
 }
 
 .wrapper03 {
@@ -107,8 +107,8 @@ h1 {
   font-size: 65px;
 }
 .start-text {
-  position: absolute;
-  transform: translate(69%, 30%);
+    position: absolute;
+    transform: translate(110%, 70%);
 }
 .icon-start {
   width: 25%;
@@ -121,8 +121,8 @@ h1 {
   width: 3.5vh;
 }
 #carouselDots {
-  height: auto;
-  width: 229px;
+  height: 1em;
+  width: 14.5em;
 }
 .carousel {
   position: fixed;

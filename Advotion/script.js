@@ -1,6 +1,8 @@
 window.addEventListener('load', function () {
     scroller = document.querySelector('.outer-wrapper');
     scrollAdder();
+    //Hide Loader when finished
+    document.getElementsByClassName("loader")[0].setAttribute("class","loaderHide")
 });
 
 function scrollAdder() {
@@ -9,7 +11,7 @@ function scrollAdder() {
         //Get current user viewing page
         let currentScroll = scroller.scrollTop;
         let maxScroll = scroller.scrollWidth;
-        currentPage = parseInt((currentScroll / maxScroll) * 10 / 2) + 1;
+        currentPage = Math.round((currentScroll / maxScroll) * 10 / 2) + 1;
 
         if (currentPage!=oldPage){
             pageChanged(currentPage);
