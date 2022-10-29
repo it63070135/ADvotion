@@ -78,10 +78,10 @@ body {
 }
 
 .btnNext {
-  width: 100px;
-  height: 100px;
-  left: 90%;
-  top: 50%;
+  width: 150px;
+  height: 120px;
+  left: 92%;
+  top: 47%;
   transform: translate(-50%, -50%);
   position: relative;
   cursor: pointer;
