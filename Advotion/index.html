@@ -4,22 +4,31 @@
 <head>
   <title>โฆษณาพาเฉิดฉาย</title>
   <link rel="icon" type="image/x-icon" href="pic/first_page/iconpage.png" />
-  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-
   <link href="style.css" rel="stylesheet" />
   <link href="loader.css" rel="stylesheet" />
-  <link href="blue_page.css" rel="stylesheet" />
+  <link href="page1.css" rel="stylesheet" />
   <link href="nav.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 
 <body>
-  <div class="loader">Loading Bruh<img rel="preload" src="pic/first_page/iconpage.png" class="iconpage" />
-    โฆษณาพาเฉิดฉาย<br /></div>
+  <div class="loaderNoShow">
+    <div class="iconLoadDiv">
+      <img rel="preload" src="pic/first_page/iconpage.png" class="iconLoad"/>
+      <span style="font-size: 1.5em">โฆษณาพาเฉิดฉาย</span><br />
+    </div>
+    <img rel="preload" src="pic/Loading/table.png" class="load_table" />
+    <div class="load_jar">
+      <img rel="preload" src="pic/Loading/J1.png" id="jar1" />
+      <img rel="preload" src="pic/Loading/J2.png" id="jar2" />
+      <img rel="preload" src="pic/Loading/J3.png" id="jar3" />
+    </div>
+  </div>
   <div class="header">
     <img src="pic/first_page/iconpage.png" class="iconpage" />
     โฆษณาพาเฉิดฉาย<br />
@@ -34,6 +43,7 @@
           <img class="blue-first-bg" src="pic/first_page/blue_firstpage_ground.png" />
 
           <div class="slide one">
+            <img class="floor" src="pic/first_page/blue_ground.png">
             <div class="start-text">
               <h1>
                 &nbsp;&nbsp;<img src="pic/first_page/iconpage.png" class="icon-start" />โฆษณา<br />&nbsp;&nbsp;พาเฉิดฉาย
@@ -50,6 +60,7 @@
               <div class="text-highlight">โฆษณา</div>
               เกิดขึ้นได้อย่างไร ?
             </div>
+            <img class="floor floorFlip" src="pic/first_page/blue_ground.png">
           </div>
 
           <div class="slide three">
@@ -58,6 +69,7 @@
               <div class="text-highlight">ร้านค้า</div>
               เกิดขึ้นหลายแห่งในชุมชน
             </div>
+            <img class="floor" src="pic/first_page/blue_ground.png">
             <img class="uncle" src="pic/first_page/uncle.png" />
             <img class="aunt" src="pic/first_page/aunt.png" />
             <img class="character33" src="pic/character/Character (33).png" />
@@ -69,6 +81,7 @@
               <div class="text-highlight">คู่แข่ง</div>
               เพิ่มมากขึ้นและผู้ขายต้องการ<br />ให้สินค้าของร้านตนเป็นที่รู้จัก
             </div>
+            <img class="floor floorFlip" src="pic/first_page/blue_ground.png">
             <img class="uncle-4" src="pic/first_page/uncle.png" />
             <img class="character13" src="pic/character/Character (13).png" />
           </div>
@@ -79,6 +92,7 @@
               <div class="text-highlight">กำเนิด</div>
               ขึ้นร้านค้าได้เฉิดฉายขึ้นมา
             </div>
+            <img class="floor" src="pic/first_page/blue_ground.png">
             <img class="tvdigitalshop" src="pic/first_page/tvdigitalshop.png">
             <img class="billboard" src="pic/first_page/billboard.png">
             <img class="vintagetv" src="pic/first_page/vintagetv.png">
@@ -87,7 +101,7 @@
             <img class="character29" src="pic/character/Character (29).png">
             <img class="btnNext"
               src="https://media.discordapp.net/attachments/1005832895191056454/1027227117357895800/button.webp?width=559&height=559"
-              onclick="location.href='second_page.html'" />
+              onclick="location.href='2_page.html'" />
           </div>
         </div>
       </div>
@@ -99,17 +113,17 @@
       <a href="index.html"><img style="width: 1.5vw; transform: translateY(25%)"
           src="pic/first_page/home-icon.svg" />&nbsp;Home page</a>
       <div class="fakeHR"></div>
-      <a href="second_page.html">ต้นกำเนิดของโฆษณา</a>
+      <a href="2_page.html">ต้นกำเนิดของโฆษณา</a>
       <div class="fakeHR"></div>
-      <a href="third_page.html">โฆษณาบนกระดาษ</a>
+      <a href="3_page.html">โฆษณาบนกระดาษ</a>
       <div class="fakeHR"></div>
-      <a href="fourth_page.html">ขายจริงผ่านจอ</a>
+      <a href="4_page.html">ขายจริงผ่านจอ</a>
       <div class="fakeHR"></div>
-      <a href="fifth_page.html">โฆษณาสู่ออนไลน์</a>
+      <a href="5_page.html">โฆษณาสู่ออนไลน์</a>
       <div class="fakeHR"></div>
-      <a href="sixth_page.html">เฉิดฉายสู่โลกอนาคต</a>
+      <a href="6_page.html">เฉิดฉายสู่โลกอนาคต</a>
       <div class="fakeHR"></div>
-      <a href="seventh_page.html">โฆษณาเป็นอมตะ</a>
+      <a href="7_page.html">โฆษณาเป็นอมตะ</a>
       <div class="fakeHR"></div>
     </div>
   </div>
@@ -144,5 +158,5 @@
       src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png" />
   </div>
 </body>
-
+<script src="script.js"></script>
 </html>

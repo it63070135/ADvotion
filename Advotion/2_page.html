@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>โฆษณาพาเฉิดฉาย</title>
+  <link rel="icon" type="image/x-icon" href="pic/first_page/iconpage.png" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <link href="style.css" rel="stylesheet" />
+  <link href="loader.css" rel="stylesheet" />
+  <link href="page2.css" rel="stylesheet" />
+  <link href="nav_2.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="loaderNoShow">
+    <div class="iconLoadDiv">
+      <img rel="preload" src="pic/first_page/iconpage.png" class="iconLoad"/>
+      <span style="font-size: 1.5em">โฆษณาพาเฉิดฉาย</span><br />
+    </div>
+    <img rel="preload" src="pic/Loading/table.png" class="load_table" />
+    <div class="load_jar">
+      <img rel="preload" src="pic/Loading/J1.png" id="jar1" />
+      <img rel="preload" src="pic/Loading/J2.png" id="jar2" />
+      <img rel="preload" src="pic/Loading/J3.png" id="jar3" />
+    </div>
+  </div>
+  <div class="header">
+    <img src="pic/first_page/iconpage.png" class="iconpage" />
+    โฆษณาพาเฉิดฉาย<br />
+    <!--<div onclick="alert('กดเบอเกอร์')" class="menu">
+      ทดสอบ
+    </div>--->
+  </div>
+  <div class="outer-wrapper">
+    <div class="wrapper">
+      <div class="wrapper02">
+        <div class="wrapper03">
+          <img class="blue-first-bg" src="pic/second_page/first_floor.png" />
+
+          <div class="slide one">
+            <img class="floor" src="pic/second_page/floor.png">
+            <div class="start-text-ForUpperone">
+              <h1>
+                ต้นกำเนิด<br />
+                <div class="section-text">ของโฆษณา</div>
+              </h1>
+            </div>
+            <img class="dog" src="pic/first_page/dog.png" />
+          </div>
+
+          <div class="slide two">
+            <div class="slide2-text">
+              ร้านขายน้ำแห่งหนึ่งมี
+              <div class="text-highlight">ลูกค้า</div>
+              เป็นคนในชุมชน
+            </div>
+            <img class="floor floorFlip" src="pic/second_page/floor.png">
+            <img class="character29-1" src="pic/character/Character (29).png" />
+            <img class="character33" src="pic/character/Character (33).png" />
+          </div>
+
+          <div class="slide three">
+            <div class="slide3-text">
+              เมื่อเกิด
+              <div class="text-highlight">คู่แข่ง</div>
+              ลุงโชคจึงหาวิธีเรียกลูกค้ามาซื้อของมากขึ้น<br />โดยตะโกนขายสินค้าของตัวเองให้ลูกค้าได้ยิน
+            </div>
+            <img class="floor" src="pic/second_page/floor.png">
+            <img class="uncle" src="pic/first_page/uncle.png" />
+            <img class="aunt" src="pic/first_page/aunt.png" />
+            <img class="character36" src="pic/character/Character (36).png" />
+          </div>
+
+          <div class="slide four">
+            <div class="slide4-text">
+              การ
+              <div class="text-highlight">ตะโกน</div>
+              เรียกลูกค้าทำให้มีลูกค้าที่เดินผ่านไปมารู้สึกสนใจร้านขึ้นมา
+            </div>
+            <img class="floor floorFlip" src="pic/second_page/floor.png">
+            <img class="uncle-4" src="pic/first_page/uncle.png" />
+            <img class="character34" src="pic/second_page/aunt_angry.png" />
+            <img class="character33_4" src="pic/character/Character (33).png" />
+            <img class="character29_4" src="pic/character/Character (29).png" />
+            <img class="character15" src="pic/character/Character (15).png" />
+            <img class="character28" src="pic/character/Character (28).png" />
+          </div>
+
+          <div class="slide five">
+            <div class="slide5-text">
+              ถ้าหากมี
+              <div class="text-highlight">เทคโนโลยี</div>
+              ที่ไม่ต้องตะโกนให้เจ็บคอล่ะ?
+            </div>
+            <img class="floor" src="pic/second_page/floor.png">
+            <img class="character9" src="pic/character/Character (9).png" />
+            <img class="btnNext" src="pic/button/paper_era.png" onclick="location.href='3_page.html'" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown">
+    <img onclick="dropdownbtn();" class="dropbtn" src="pic/first_page/menu-icon.svg" />
+    <div id="myDropdown" class="dropdown-content dropdown_animation1">
+      <a href="index.html"><img style="width: 1.5vw; transform: translateY(25%)"
+          src="pic/first_page/home-icon.svg" />&nbsp;Home page</a>
+      <div class="fakeHR"></div>
+      <a href="2_page.html">ต้นกำเนิดของโฆษณา</a>
+      <div class="fakeHR"></div>
+      <a href="3_page.html">โฆษณาบนกระดาษ</a>
+      <div class="fakeHR"></div>
+      <a href="4_page.html">ขายจริงผ่านจอ</a>
+      <div class="fakeHR"></div>
+      <a href="5_page.html">โฆษณาสู่ออนไลน์</a>
+      <div class="fakeHR"></div>
+      <a href="6_page.html">เฉิดฉายสู่โลกอนาคต</a>
+      <div class="fakeHR"></div>
+      <a href="7_page.html">โฆษณาเป็นอมตะ</a>
+      <div class="fakeHR"></div>
+    </div>
+  </div>
+  <div class="carousel">
+    <svg id="carouselDots">
+      <defs>
+        <style>
+          .grey {
+            fill: #c9c9c9;
+            cursor: pointer;
+          }
+
+          .active {
+            fill: #ec5a38;
+          }
+        </style>
+      </defs>
+      <line stroke="#C9C9C9" stroke-width="3" class="grey" x1="9" y1="9" x2="220.41" y2="9" />
+      <circle onclick="gotoPage(1)" id="circle1" class="active" cx="9" cy="9" r="7" />
+      <circle onclick="gotoPage(2)" id="circle2" class="grey" cx="61.85" cy="9" r="7" />
+      <circle onclick="gotoPage(3)" id="circle3" class="grey" cx="114.7" cy="9" r="7" />
+      <circle onclick="gotoPage(4)" id="circle4" class="grey" cx="167.55" cy="9" r="7" />
+      <circle onclick="gotoPage(5)" id="circle5" class="grey" cx="220.41" cy="9" r="7" />
+    </svg>
+  </div>
+  <div class="nextslide">
+    <img class="btnnextslide" onclick="nextslide()"
+      src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png" />
+  </div>
+  <div class="previousslide">
+    <img class="btnpreviousslide" onclick="previousslide()"
+      src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png" />
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,3 +1,32 @@
+.slide {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  /*background-image: url("pic/sixth_page/floor.png");*/
+  background-repeat: no-repeat;
+  background-size: 100vw 82vh;
+  background-position: left bottom;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: url("pic/sixth_page/city.png");
+  background-size: auto 51%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+.wrapper02 {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  background-image: url("pic/sixth_page/envi.png");
+  background-size: auto 43%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
 .slide2-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -49,9 +78,14 @@
   bottom: 18.5vh;
   /* transform: translate(-50%, -50%); */
 }
+.start-text-ForUpperone {
+  position: absolute;
+  transform: translate(110%, 35%);
+  font-size: 5vh;
+}
 
 .text-highlight {
-  color: #00a3da;
+  color: #fca5e4;
   display: inline-block;
   font-size: 3.5vh;
 }
@@ -149,11 +183,14 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+h1{
+  font-size: 10vh;
+}
 
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {
-    color: #00a3da;
+    color: #fca5e4;
     display: inline-block;
     font-size: 2.5vh;
   }

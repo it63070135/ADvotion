@@ -1,3 +1,32 @@
+.slide {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+  /*background-image: url("pic/fourth_page/floor.png");*/
+  background-repeat: no-repeat;
+  background-size: 100vw 82vh;
+  background-position: left bottom;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: url("pic/fourth_page/city.png");
+  background-size: auto 51%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+.wrapper02 {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  background-image: url("pic/fourth_page/envi.png");
+  background-size: auto 46%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
 .slide2-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -26,34 +55,44 @@
   text-align: center;
   top: 18%;
 }
-.dog {
+.character18 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 8vw;
+  width: 13vw;
   height: auto;
   min-width: 160px;
-  left: 38vw;
-  bottom: 20vh;
+  left: 23vw;
+  bottom: 15vh;
   /*transform: translate(-50%, -50%);*/
 }
 
-.umbrella {
+.character19 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 10vw;
+  width: 30vw;
   height: auto;
   min-width: 350px;
-  left: 47vw;
-  bottom: 18.5vh;
+  left: 68vw;
+  bottom: -32vh;
   /* transform: translate(-50%, -50%); */
 }
-
+.start-text-ForUpperone {
+  position: absolute;
+  transform: translate(110%, 35%);
+  font-size: 5vh;
+}
+.section-text{
+  color: #485bcf;
+}
 .text-highlight {
-  color: #00a3da;
+  color: #485bcf;
   display: inline-block;
   font-size: 3.5vh;
+}
+h1{
+  font-size: 10vh;
 }
 
 /* .character16{
@@ -79,25 +118,14 @@
     bottom: 19.5vh;
   } */
 
-.sign {
+.shopTv {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 15vw;
+  width: 30vw;
   height: auto;
-  left: 140.5vw;
+  left: 135vw;
   bottom: 20vh;
-}
-.character16 {
-  transform-style: preserve-3d;
-  position: absolute;
-  z-index: 5;
-  width: 12vw;
-  height: auto;
-  left: 130vw;
-  bottom: 10vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 .uncle {
   transform-style: preserve-3d;
@@ -123,20 +151,18 @@
   z-index: 5;
   width: 14vw;
   height: auto;
-  left: 260vw;
-  bottom: 6vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  left: 219vw;
+  bottom: 2vh;
 }
 /* slide 3 */
-.uncle-4 {
+.uncle-shop{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 13vw;
+  width: 45vw;
   height: auto;
-  left: 343vw;
-  bottom: 20vh;
+  left: 328vw;
+  bottom: 17vh;
 }
 .character13 {
   transform-style: preserve-3d;
@@ -144,11 +170,49 @@
   z-index: 5;
   width: 15vw;
   height: auto;
-  left: 325vw;
-  bottom: -17vh;
+  left: 360vw;
+  bottom: 0vh;
+}
+.shopUncleChoke{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 45vw;
+  height: auto;
+  left: 228vw;
+  bottom: 17vh;
+}
+.character17{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 244vw;
+  bottom: 13vh;
+}
+.whiteChair{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  height: auto;
+  left: 252vw;
+  bottom: -3vh;
+}
+
+.character24 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 70vw;
+  height: auto;
+  left: 440vw;
+  bottom: -115vh;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 
 /* for phone */
 @media screen and (max-width: 992px) {
@@ -165,26 +229,6 @@
     font-size: 2vh;
     text-align: center;
     top: 18%;
-  }
-  .sign {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 50vw;
-    height: auto;
-    left: 120vw;
-    bottom: 22vh;
-  }
-  .character16 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 110vw;
-    bottom: 13vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
   }
 
   /* slide 3 */
@@ -244,5 +288,14 @@
     bottom: -12vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+  }
+  .shopUncleChoke{
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 45vw;
+    height: auto;
+    left: 290vw;
+    bottom: 17vh;
   }
 }

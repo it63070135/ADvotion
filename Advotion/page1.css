@@ -1,0 +1,448 @@
+.slide {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+ /* background-image: url("pic/first_page/blue_ground.png");*/
+  background-size: 100vw 100vh;
+  background-position: left bottom;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-image: url("pic/first_page/blue_city.png");
+  background-size: auto 51%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+.wrapper02 {
+  display: flex;
+  flex-direction: row;
+  width: 500vw;
+  background-image: url("pic/first_page/blue_tree.png");
+  background-size: auto 43%;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+.slide2-text {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+
+}
+
+.slide3-text {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+
+}
+
+.slide4-text {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+
+}
+
+.slide5-text {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  text-align: center;
+  top: 18%;
+}
+
+.dog {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 8vw;
+  height: auto;
+  left: 38vw;
+  bottom: 20vh;
+  /*transform: translate(-50%, -50%);*/
+}
+
+.umbrella {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  height: auto;
+  left: 45vw;
+  bottom: 18.5vh;
+  /* transform: translate(-50%, -50%); */
+}
+
+.text-highlight {
+  color: #00A3DA;
+  display: inline-block;
+  font-size: 3.5vh;
+}
+
+/* .character16{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 12vw;
+  height: auto;
+  min-width: 30px;
+  left: 125vw;
+  bottom: 18.5vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+} */
+/* .sign{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  min-width: 15vw;
+  left: 142vw;
+  bottom: 19.5vh;
+} */
+
+.sign {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 140.5vw;
+  bottom: 20vh;
+}
+
+.character16 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 12vw;
+  height: auto;
+  left: 130vw;
+  bottom: 10vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.uncle {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 237vw;
+  bottom: 20vh;
+}
+
+.aunt {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 251vw;
+  bottom: 20vh;
+}
+
+.character33 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 14vw;
+  height: auto;
+  left: 260vw;
+  bottom: 6vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* slide 3 */
+.uncle-4 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 343vw;
+  bottom: 20vh;
+}
+
+.character13 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 325vw;
+  bottom: -17vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.tvdigitalshop {
+  position: absolute;
+  bottom: 20vh;
+  left: 430vw;
+}
+
+.billboard {
+  position: absolute;
+  bottom: 20vh;
+  left: 448vw;
+}
+
+.vintagetv {
+  position: absolute;
+  bottom: 24.5vh;
+  left: 467vw;
+}
+
+.character30 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 10vw;
+  height: auto;
+  left: 263vw;
+  bottom: 7vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#character30_1 {
+  left: 455vw;
+}
+
+#character30_2 {
+  left: 461vw;
+  bottom: 3vh;
+}
+
+
+.character29 {
+  left: 420vw;
+  position: absolute;
+  width: 15vw;
+  transform: scaleX(-1);
+  bottom: -17vh;
+}
+
+/* for phone */
+@media screen and (max-width: 992px) {
+  .dog {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 25vw;
+    height: auto;
+    left: 23vw;
+    bottom: 20vh;
+    /*transform: translate(-50%, -50%);*/
+  }
+
+  .umbrella {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 60vw;
+    height: auto;
+    left: 27vw;
+    bottom: 20vh;
+    /* transform: translate(-50%, -50%); */
+  }
+
+  .text-highlight {
+    color: #00A3DA;
+    display: inline-block;
+    font-size: 2.5vh;
+  }
+
+  /* slide 2 */
+  .slide2-text {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 18%;
+
+  }
+
+  .sign {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 120vw;
+    bottom: 22vh;
+  }
+
+  .character16 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 40vw;
+    height: auto;
+    left: 110vw;
+    bottom: 13vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  /* slide 3 */
+  .slide3-text {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
+  }
+
+  .uncle {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 40vw;
+    height: auto;
+    left: 211vw;
+    bottom: 22vh;
+  }
+
+  .aunt {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 40vw;
+    height: auto;
+    left: 252vw;
+    bottom: 22vh;
+  }
+
+  .character33 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 42vw;
+    height: auto;
+    left: 263vw;
+    bottom: 7vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  /* slide 4 */
+  .uncle-4 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 40vw;
+    height: auto;
+    left: 331vw;
+    bottom: 22vh;
+  }
+
+  .character13 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 44vw;
+    height: auto;
+    left: 300vw;
+    bottom: -12vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .slide4-text {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
+
+  }
+
+  /*Slide 5*/
+  .tvdigitalshop {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    left: 403vw;
+    bottom: 23vh;
+  }
+
+  .billboard {
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    left: 430vw;
+    bottom: 23vh;
+
+  }
+
+  .vintagetv {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    left: 475vw;
+    bottom: 23vh;
+
+  }
+
+  .character30 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 450vw;
+    bottom: 8vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  #character30_1 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    bottom: 8vh;
+    left: 450vw;
+  }
+
+  #character30_2 {
+    bottom: 6vh;
+    left: 465vw;
+  }
+
+  .character29 {
+    width: 40vw;
+    height: auto;
+    left: 415vw;
+    bottom: -10vh;
+    transform: scaleX(-1);
+  }
+
+  .slide5-text {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 18%;
+  }
+}

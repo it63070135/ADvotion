@@ -8,35 +8,6 @@ body {
   overflow: hidden;
 }
 
-.slide {
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: center;
-  background-image: url("pic/first_page/blue_ground.png");
-  background-size: 100vw 100vh;
-  background-position: left bottom;
-}
-.wrapper{
-  display: flex;
-  flex-direction: row;
-  width: 500vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  background-image: url("pic/first_page/blue_city.png");
-  background-size: auto 51%;
-  background-repeat: repeat-x;
-  background-position: left bottom;
-}
-.wrapper02 {
-  display: flex;
-  flex-direction: row;
-  width: 500vw;
-  background-image: url("pic/first_page/blue_tree.png");
-  background-size: auto 43%;
-  background-repeat: repeat-x;
-  background-position: left bottom;
-}
-
 .wrapper03 {
   display: flex;
   flex-direction: row;
@@ -63,7 +34,24 @@ body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-
+.floor {
+  position:absolute;
+  top:0%;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+.floorFlip{
+  transform: scaleX(-1);
+}
+/*floor นี้ตั้งแต่ 4 ขึ้นไป*/
+.floor2 {
+  position:absolute;
+  bottom:0%;
+  width: 100vw;
+  height: 82vh;
+  scroll-snap-align: center;
+}
 .one {
 }
 .two {
@@ -98,6 +86,7 @@ body {
   transform: translateX(-50%);
   font-size: 25px;
   margin-top: 1%;
+  visibility: visible;
 }
 .iconpage {
   width: 40px;
@@ -157,12 +146,20 @@ h1 {
   z-index: 20;
   height:auto;
   width: 2.5vw;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(180deg);
   cursor:pointer;
   visibility: hidden;
-  transform: rotate(180deg);
 }
 .dropdown{
   float: right;
   position: absolute;
+}
+.popup{
+  position:fixed;
+  background-color: blueviolet;
+  width:25vw;
+  height: 40vh;
+  top:0%;
+  left:0%;
+  /* visibility: visible; */
 }
