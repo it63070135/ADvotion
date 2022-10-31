@@ -62,7 +62,7 @@
   transform: translate(75%, 50%);
   font-size: 5vh;
 }
-.section-text{
+.section-text {
   color: #dc285e;
 }
 
@@ -95,8 +95,17 @@
     bottom: 19.5vh;
   } */
 
-
 /* slide1 */
+
+.bts {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  height: auto;
+  left: 4vw;
+  bottom: 38.5vh;
+}
 
 .character22 {
   transform-style: preserve-3d;
@@ -121,7 +130,7 @@
   transform: scaleX(-1);
 }
 
-.character25{
+.character25 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -131,7 +140,7 @@
   bottom: 7vh;
 }
 
-.character26{
+.character26 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -141,7 +150,7 @@
   bottom: -10vh;
 }
 
-.shopUncleChoke{
+.shopUncleChoke {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -162,7 +171,7 @@
   bottom: 22vh;
 }
 
-.tvdigitalshop-3{
+.tvdigitalshop-3 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 4;
@@ -205,17 +214,17 @@
 }
 
 /* slide4 */
-.car{
+.car {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
   position: absolute;
-  width: 30vw;
+  width: 40vw;
   height: auto;
   left: 287vw;
   bottom: -11vh;
 }
-.character21{
+.character21 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -226,7 +235,7 @@
 }
 
 /* slide5 */
-.character4{
+.character4 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -236,7 +245,7 @@
   bottom: 5vh;
 }
 
-h1{
+h1 {
   font-size: 10vh;
 }
 
@@ -266,7 +275,7 @@ h1{
     text-align: center;
     top: 25%;
   }
-  
+
   /* slide 4 */
   .slide4-text {
     font-family: "IBM Plex Sans Thai", sans-serif;

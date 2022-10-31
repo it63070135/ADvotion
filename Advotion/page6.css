@@ -31,8 +31,9 @@
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
-  text-align: center;
-  top: 18%;
+  text-align: left;
+  top: 20%;
+  left: 41vw;
 }
 .slide3-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
@@ -80,8 +81,12 @@
 }
 .start-text-ForUpperone {
   position: absolute;
-  transform: translate(110%, 35%);
+  transform: translate(100%, 35%);
   font-size: 5vh;
+}
+
+.section-text {
+  color: #fca5e4;
 }
 
 .text-highlight {
@@ -122,6 +127,79 @@
   left: 140.5vw;
   bottom: 20vh;
 }
+
+.character1 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 325vw;
+  bottom: 15vh;
+}
+
+.character2 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 115vw;
+  bottom: 12vh;
+}
+
+.character3 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 248vw;
+  bottom: 0vh;
+}
+
+.character4 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 35vw;
+  height: auto;
+  left: 130vw;
+  bottom: -50vh;
+}
+
+.character5 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 235vw;
+  bottom: 0vh;
+}
+
+.character5-4 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 35vw;
+  height: auto;
+  left: 345vw;
+  bottom: -33vh;
+}
+
+.character6 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 12vw;
+  height: auto;
+  left: 50vw;
+  bottom: 10vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 .character16 {
   transform-style: preserve-3d;
   position: absolute;
@@ -136,31 +214,81 @@
 .uncle {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 5;
-  width: 13vw;
+  z-index: 4;
+  width: 9vw;
   height: auto;
-  left: 237vw;
+  left: 245vw;
   bottom: 20vh;
+}
+
+.uncle-5 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 10vw;
+  height: auto;
+  left: 445vw;
+  bottom: 15vh;
+}
+
+.uncle-paper {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 9vw;
+  height: auto;
+  left: 465vw;
+  bottom: 13vh;
+}
+
+.uncle_shop {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 35vw;
+  height: auto;
+  left: 232vw;
+  bottom: 20vh;
+}
+
+.uncle_shop-5 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 35vw;
+  height: auto;
+  left: 432vw;
+  bottom: 15vh;
 }
 .aunt {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 5;
-  width: 13vw;
+  z-index: 4;
+  width: 10vw;
   height: auto;
-  left: 251vw;
-  bottom: 20vh;
+  left: 420vw;
+  bottom: 15vh;
+}
+
+.character28 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 15vw;
+  height: auto;
+  left: 425vw;
+  bottom: -24vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .character29 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 14vw;
+  width: 10vw;
   height: auto;
-  left: 260vw;
+  left: 413vw;
   bottom: 6vh;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
 }
 /* slide 3 */
 .uncle-4 {
@@ -183,8 +311,49 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-h1{
+h1 {
   font-size: 10vh;
+}
+.rocket {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 0;
+  width: 10vw;
+  height: auto;
+  left: 170vw;
+  bottom: 70vh;
+}
+
+.vintagetv {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 7vw;
+  height: auto;
+  left: 410vw;
+  bottom: 20vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.billboard {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 15vw;
+  height: auto;
+  left: 470vw;
+  bottom: 24vh;
+}
+
+.black_table {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 478vw;
+  bottom: 3vh;
 }
 
 /* for phone */
