@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
 
 document.addEventListener('readystatechange', () => {
     if (document.readyState == 'interactive') {
-        setTimeout(showLoader, 1000);
+        setTimeout(showLoader, 500);
     }
 });
 
