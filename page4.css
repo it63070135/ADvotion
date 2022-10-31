@@ -55,6 +55,13 @@
   text-align: center;
   top: 18%;
 }
+.textlast{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  top: 30%;
+  left: 60%;
+}
 .character18 {
   transform-style: preserve-3d;
   position: absolute;
@@ -204,15 +211,35 @@ h1{
 .character24 {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 5;
-  width: 70vw;
+  z-index: 4;
+  width: 65vw;
   height: auto;
   left: 440vw;
-  bottom: -115vh;
+  bottom: -110vh;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
+.btnNext {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 90%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
+}
+.car{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 405vw;
+  bottom: 20vh;
+}
 
 /* for phone */
 @media screen and (max-width: 992px) {

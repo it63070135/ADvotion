@@ -53,8 +53,15 @@
   position: relative;
   font-size: 3vh;
   text-align: left;
-  left: 10vw;
-  top: 18%;
+  left: 20vw;
+  top: 30vh;
+}
+.textlast{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  top: 30%;
+  left: 60%;
 }
 
 .start-text-ForUpperone {
@@ -100,11 +107,13 @@
 .bts {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 5;
+  z-index: -5;
   width: 20vw;
   height: auto;
   left: 4vw;
   bottom: 38.5vh;
+  animation: bts 1s linear infinite forwards;
+  animation-duration: 50s;
 }
 
 .character22 {
@@ -241,12 +250,30 @@
   z-index: 5;
   width: 23vw;
   height: auto;
-  left: 470vw;
-  bottom: 5vh;
+  left: 460vw;
+  bottom: 10vh;
 }
 
 h1 {
   font-size: 10vh;
+}
+.btnNext {
+  width: 15vw;
+  height: auto;
+  left: 88%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
+}
+.ufo{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 475vw;
+  bottom: 73vh;
 }
 
 /* for phone */
@@ -292,5 +319,14 @@ h1 {
     font-size: 3vh;
     text-align: center;
     top: 18%;
+  }
+}
+
+@keyframes bts {
+  from{ left: 0vw;
+
+  }
+  to {
+    left: 500vw;
   }
 }

@@ -116,38 +116,37 @@ window.onclick = function (event) {
 var app = new Vue({
     el: '#popup',
     data: {
+        showingIMG: "",
+        showingContent: "",
         showingPopup: false,
-        page1: [{img:'bob.img' ,content:"คุณลุงใจเกเร"}]
+        "page1": [{ img: "", content: "" }],
+        "page2": [{ img: "", content: "" }],
+        "page3": [{ img: "", content: "" }],
+        "page4": [{ img: "", content: "" }],
+        "page5": [{ img: "", content: "" }],
+        "page6": [{ img: "", content: "" }],
+        "page7": [{ img: "pic/character/Character (7).png", content: "Lorem ipsum setyor 2 hor saikai khao jong jar len khun" },
+        { img: "pic/character/Character (7).png", content: "ลุงคนนี้ก็ใจเกเรมาก" }]
     },
     methods: {
-        showPopup: function (pageNum, popupNum) {
-            popupNum -= 1
-            popupcontainer = document.getElementsByClassName('popup')[popupNum];
+        closePopup: function () {
             this.showingPopup = !this.showingPopup
-            console.log(this.showingPopup);
-            // if(popupcontainer.style.visibility == "hidden"){
-            //     popupcontainer.style.visibility == "visible";
-            //     this.showingPopup = true;
-            // }
-            // else{
-            //     popupcontainer.style.visibility == "hidden"
-            // }
         }
     }
-    //Sudo code
-    /*
-    data:{
-        page1: [{img:'bob.img' ,content:"ลุงโชคเีเีเีกเีกเรกีรเก"}, {img:'bob.img' ,content:"ลุงโชคเีเีเีกเีกเรกีรเก"}]
-        page2: "dsadadas", "asdadad", "asdadadadadadad"
-        page3:...
-        ...
-    },
-    methods{
-        showPopup(pageNum, popupNum){
-            currentPage = "page"+parseString(pageNum);
-            img = data.currentPage[popupNum-1].img
-            content = data.currentPage[popupNum-1].content
-        }
-    }
-    */
 })
+
+var popupcontroller = new Vue({
+    el: '#popupcontrol',
+    methods: {
+        showPopup: function (pageNum, popupNum) {
+            //popupNum and pageNum correction
+            popupNum -= 1
+            pageNum = "page" + pageNum
+
+            app.showingIMG = app[pageNum][popupNum].img
+            app.showingContent = app[pageNum][popupNum].content
+            app.showingPopup = !app.showingPopup
+        }
+    }
+})
+

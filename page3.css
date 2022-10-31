@@ -54,6 +54,13 @@
   text-align: center;
   top: 18%;
 }
+.textlast{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  top: 30%;
+  left: 60%;
+}
 .character12{
   transform-style: preserve-3d;
   position: absolute;
@@ -125,6 +132,17 @@
   left: 230vw;
   bottom: 20vh;
 }
+.character29-2{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  height: auto;
+  left: 472vw;
+  bottom: -28vh;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .newspaperShop {
   transform-style: preserve-3d;
   position: absolute;
@@ -160,7 +178,7 @@
   z-index: 5;
   width: 10vw;
   height: auto;
-  left: 430vw;
+  left: 460vw;
   bottom: 20vh;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -173,12 +191,12 @@
   height: auto;
 }
 #character301 {
-  left: 435vw;
-  bottom: -3vh;
+  left: 465vw;
+  bottom: 0vh;
 }
 #character302 {
-  left: 443vw;
-  bottom: 0vh;
+  left: 478vw;
+  bottom: 10vh;
 }
 .character13 {
   transform-style: preserve-3d;
@@ -220,6 +238,16 @@
 }
 h1{
   font-size: 10vh;
+}
+.btnNext{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 480vw;
+  bottom: 48vh;
+  cursor: pointer;
 }
 
 /* for phone */
@@ -266,15 +294,6 @@ h1{
     font-size: 2vh;
     text-align: center;
     top: 25%;
-  }
-  .character29 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 30vw;
-    height: auto;
-    left: 210vw;
-    bottom: 20vh;
   }
   .Board{
     transform-style: preserve-3d;

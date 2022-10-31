@@ -63,6 +63,13 @@
   text-align: center;
   top: 18%;
 }
+.textlast{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  top: 20%;
+  left: 5%;
+}
 .dog {
   transform-style: preserve-3d;
   position: absolute;
@@ -166,6 +173,15 @@ h1{
   transform: scaleX(-1);
 }
 /* slide 3 */
+.orangetree{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 11vw;
+  height: auto;
+  left: 360vw;
+  bottom: 20vh;
+}
 .uncle-4 {
   transform-style: preserve-3d;
   position: absolute;
@@ -230,10 +246,48 @@ h1{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
+  width: 10vw;
+  height: auto;
+  left: 483vw;
+  bottom: 20vh;
+}
+.newspaper{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  height: auto;
+  left: 480vw;
+  bottom: 15vh;
+  transform: rotate(-13deg);
+}
+.character10{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
   width: 13vw;
   height: auto;
-  left: 443vw;
-  bottom: 20vh;
+  left: 450vw;
+  bottom: 15vh;
+  transform:scaleX(-1);
+}
+.character38{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 40vw;
+  height: auto;
+  left: 405vw;
+  bottom: -9vh;
+}
+.btnNext{
+  width: 15vw;
+  height: auto;
+  left: 90%;
+  top: 33%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
 }
 
 /* for phone */

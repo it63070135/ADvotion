@@ -65,7 +65,7 @@ body {
   display: none;
 }
 
-.btnNext {
+/*.btnNext {
   width: 100px;
   height: 100px;
   left: 90%;
@@ -73,7 +73,7 @@ body {
   transform: translate(-50%, -50%);
   position: relative;
   cursor: pointer;
-}
+}*/
 
 .back-background {
   position: absolute;
@@ -87,6 +87,8 @@ body {
   font-size: 25px;
   margin-top: 1%;
   visibility: visible;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
 .iconpage {
   width: 40px;
@@ -98,6 +100,8 @@ h1 {
 .start-text {
   position: absolute;
   transform: translate(69%, 30%);
+  transform-style: preserve-3d;
+  z-index: 1;
 }
 .icon-start {
   width: 25%;
@@ -135,6 +139,7 @@ h1 {
   width: 2.5vw;
   transform: translate(-50%, -50%);
   cursor:pointer;
+  opacity: 0.2;
 }
 .previousslide{
   position:fixed;
@@ -149,17 +154,111 @@ h1 {
   transform: translate(-50%, -50%) rotate(180deg);
   cursor:pointer;
   visibility: hidden;
+  opacity: 0.2;
 }
 .dropdown{
   float: right;
   position: absolute;
 }
 .popup{
-  position:fixed;
+  top:0;
+  position:absolute;
+  transform-style: preserve-3d;
+  z-index: 420;
   background-color: blueviolet;
-  width:25vw;
-  height: 40vh;
-  top:0%;
-  left:0%;
-  /* visibility: visible; */
+  width:100vw;
+  height: 100vh;  
+}
+
+.popupImg{
+  width:20vw;
+}
+
+.popupCard{
+  transform-style: preserve-3d;
+  z-index: 422;
+  position: absolute;
+  width: 50vw;
+  height: 90vh;
+  background-color: pink;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%) ;
+  justify-content: center;
+}
+
+.popupBG{
+  transform-style: preserve-3d;
+  z-index: 421;
+  position: absolute;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+.popupExit{
+  width: 10vw;
+}
+
+.cloud01{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 70vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud01 1s linear infinite forwards;
+  animation-duration: 200s;
+}
+.cloud02{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 5vw;
+  bottom: 60vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud02 1s linear infinite forwards;
+  animation-duration: 200s;
+  
+}
+.cloud03{
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 90vw;
+  bottom: 50vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud03 1s linear infinite forwards;
+  animation-duration: 200s;
+
+}
+@keyframes cloud01 {
+  from{ left: 60vw;
+
+  }
+  to {
+    left: 500vw;
+  }
+}
+
+@keyframes cloud02 {
+  from{ left: 5vw;
+
+  }
+  to {
+    left: 500vw;
+  }
+}
+
+@keyframes cloud03 {
+  from{ left: 90vw;
+
+  }
+  to {
+    left: 500vw;
+  }
 }

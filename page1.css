@@ -64,6 +64,14 @@
   top: 18%;
 }
 
+.textlast{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  position: relative;
+  font-size: 3vh;
+  top: 20%;
+  left: 5%;
+}
+
 .dog {
   transform-style: preserve-3d;
   position: absolute;
@@ -194,20 +202,29 @@
 
 .tvdigitalshop {
   position: absolute;
-  bottom: 20vh;
-  left: 430vw;
+  bottom: 15vh;
+  left: 405vw;
 }
 
 .billboard {
   position: absolute;
-  bottom: 20vh;
-  left: 448vw;
+  bottom: 15vh;
+  left: 419vw;
 }
 
 .vintagetv {
   position: absolute;
-  bottom: 24.5vh;
-  left: 467vw;
+  bottom: 20vh;
+  left: 433vw;
+}
+.uncle-5 {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 13vw;
+  height: auto;
+  left: 475vw;
+  bottom: 20vh;
 }
 
 .character30 {
@@ -238,6 +255,15 @@
   width: 15vw;
   transform: scaleX(-1);
   bottom: -17vh;
+}
+.btnNext {
+  width: 15vw;
+  height: auto;
+  left: 82%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
 }
 
 /* for phone */

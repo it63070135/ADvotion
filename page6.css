@@ -356,6 +356,16 @@ h1 {
   bottom: 3vh;
 }
 
+.btnNext {
+  width: 15vw;
+  height: auto;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  cursor: pointer;
+}
+
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {

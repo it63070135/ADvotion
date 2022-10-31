@@ -274,7 +274,24 @@ h1 {
   bottom: 50vh;
   rotate: -20deg;
 }
-
+.logo_aad{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 442vw;
+  bottom: 50vh;
+}
+.logo_it{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 15vw;
+  height: auto;
+  left: 442vw;
+  bottom: 40vh;
+}
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {
