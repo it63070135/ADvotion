@@ -126,7 +126,8 @@ var app = new Vue({
         "page5": [{ img: "", content: "" }],
         "page6": [{ img: "", content: "" }],
         "page7": [{ img: "pic/character/Character (7).png", content: "Lorem ipsum setyor 2 hor saikai khao jong jar len khun" },
-        { img: "pic/character/Character (7).png", content: "ลุงคนนี้ก็ใจเกเรมาก" }]
+        { img: "pic/character/Character (7).png", content: "ลุงคนนี้ก็ใจเกเรมาก" },
+        { img: "pic/character/Character (7).png", content: "ลุงคนนี้ก็ใจเกเรมากๆเช่นกัน" }]
     },
     methods: {
         closePopup: function () {

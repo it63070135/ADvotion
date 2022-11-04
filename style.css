@@ -165,26 +165,43 @@ h1 {
   position:absolute;
   transform-style: preserve-3d;
   z-index: 420;
-  background-color: blueviolet;
   width:100vw;
   height: 100vh;  
 }
 
 .popupImg{
-  width:20vw;
+  display:block;
+  width:15vw;
+  /* position: absolute; */
+  position:relative;
+  transform-style: preserve-3d;
+  z-index: 423;
+  left: 50%;
+  transform:translateX(-50%) translateY(-50%);
 }
 
+/*.popupContent{
+  position: absolute;
+  top: 30%;
+}*/
+.popupContent{
+  position: relative;
+  top: -25%;
+}
 .popupCard{
+  display:block;
   transform-style: preserve-3d;
   z-index: 422;
   position: absolute;
-  width: 50vw;
-  height: 90vh;
+  width: 30vw;
+  height: 70vh;
   background-color: pink;
   left: 50%;
-  top:50%;
-  transform: translateX(-50%) translateY(-50%) ;
+  top:60%;
+  transform: translateX(-50%) translateY(-50%);
   justify-content: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .popupBG{
@@ -194,13 +211,24 @@ h1 {
   top: 0%;
   width: 100vw;
   height: 100vh;
-  background-color: blue;
+  background-color: rgba(0,0,0,0.75);
 }
 
 .popupExit{
-  width: 10vw;
+  position: absolute;
+  width: 4vw;
+  left:50%;
+  top:60vh;
+  transform: translateX(-50%);
 }
-
+.cloudhouse{
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 .cloud01{
   position: absolute;
   width: 20vw;
@@ -211,6 +239,7 @@ h1 {
   z-index: -5;
   animation: cloud01 1s linear infinite forwards;
   animation-duration: 200s;
+  animation-delay: -25s;
 }
 .cloud02{
   position: absolute;
@@ -222,7 +251,7 @@ h1 {
   z-index: -5;
   animation: cloud02 1s linear infinite forwards;
   animation-duration: 200s;
-  
+  animation-delay: -5s;
 }
 .cloud03{
   position: absolute;
@@ -234,31 +263,221 @@ h1 {
   z-index: -5;
   animation: cloud03 1s linear infinite forwards;
   animation-duration: 200s;
+  animation-delay: -35s;
 
 }
+.cloud01-2{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 70vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud01 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -65s;
+}
+.cloud02-2{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 60vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud02 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -40s;
+}
+.cloud03-2{
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 90vw;
+  bottom: 50vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud03 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -75s;
+
+}
+.cloud01-3{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 70vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud01 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -105s;
+}
+.cloud02-3{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 60vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud02 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -80s;
+}
+.cloud03-3{
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 90vw;
+  bottom: 50vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud03 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -115s;
+
+}
+.cloud01-4{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 70vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud01 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -145s;
+}
+.cloud02-4{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 60vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud02 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -120s;
+}
+.cloud03-4{
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 90vw;
+  bottom: 50vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud03 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -155s;
+
+}
+.cloud01-5{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 70vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud01 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -185s;
+}
+.cloud02-5{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  left: 60vw;
+  bottom: 60vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud02 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -160s;
+}
+.cloud03-5{
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 90vw;
+  bottom: 50vh;
+  transform-style: preserve-3d;
+  z-index: -5;
+  animation: cloud03 1s linear infinite forwards;
+  animation-duration: 200s;
+  animation-delay: -195s;
+
+}
+.footer{
+  display:flex;
+  bottom: 0%;
+  left:0%;
+  position: fixed;
+  width: 20vw;
+  height: auto;
+  background-color: white;
+  border-top-right-radius: 25px;
+  opacity: 0.8;
+  justify-content: center;
+}
+.nited{
+  position: relative;
+  width: 7vw;
+  height: auto;
+  margin-right: 20px;
+}
+.it{
+  position: relative;
+  width: 9vw;
+  height:auto;
+}
 @keyframes cloud01 {
-  from{ left: 60vw;
+  from{ left: 0vw;
 
   }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
   to {
-    left: 500vw;
+    left: 480vw;
   }
 }
 
 @keyframes cloud02 {
-  from{ left: 5vw;
+  from{ left: 0vw;
 
   }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
   to {
-    left: 500vw;
+    left: 480vw;
   }
 }
 
 @keyframes cloud03 {
-  from{ left: 90vw;
+  from{ left: 0vw;
 
   }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
   to {
-    left: 500vw;
+    left: 480vw;
   }
 }
