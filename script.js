@@ -120,7 +120,7 @@ var app = new Vue({
         showingContent: "",
         showingPopup: false,
         "page1": [{ img: "", content: "" }],
-        "page2": [{ img: "", content: "" }],
+        "page2": [{ img: "pic/character/Character (7).png", content: "เฮ้หนูมาดูนี่ซิ" }],
         "page3": [{ img: "", content: "" }],
         "page4": [{ img: "", content: "" }],
         "page5": [{ img: "", content: "" }],

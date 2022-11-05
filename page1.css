@@ -66,10 +66,10 @@
 
 .textlast{
   font-family: 'IBM Plex Sans Thai', sans-serif;
-  position: relative;
+  position: absolute;
   font-size: 3vh;
   top: 20%;
-  left: 5%;
+  left: 82%;
 }
 
 .dog {
@@ -144,7 +144,6 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-
 .uncle {
   transform-style: preserve-3d;
   position: absolute;

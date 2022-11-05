@@ -57,10 +57,10 @@
 }
 .textlast{
   font-family: 'IBM Plex Sans Thai', sans-serif;
-  position: relative;
+  position: absolute;
   font-size: 3vh;
   top: 30%;
-  left: 60%;
+  left: 91%;
 }
 .character18 {
   transform-style: preserve-3d;

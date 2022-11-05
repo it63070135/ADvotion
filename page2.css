@@ -65,10 +65,10 @@
 }
 .textlast{
   font-family: 'IBM Plex Sans Thai', sans-serif;
-  position: relative;
+  position: absolute;
   font-size: 3vh;
   top: 20%;
-  left: 5%;
+  left: 82%;
 }
 .dog {
   transform-style: preserve-3d;
@@ -289,6 +289,28 @@ h1{
   position: relative;
   cursor: pointer;
 }
+.buttonpress{
+  position: relative;
+  z-index: 20;
+  height:auto;
+  width: 1.5vw;
+  transform:translate(-50%) rotate(90deg);
+  left:50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+  opacity: 0.7;
+}
+.textpress{
+  position:absolute;
+  z-index: 20;
+  height:6em;
+  width: auto;
+  transform:translate(50%, 50%);
+  left:239.5vw;
+  top: 32vh;
+}
+
+
 
 /* for phone */
 @media screen and (max-width: 992px) {

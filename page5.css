@@ -58,10 +58,10 @@
 }
 .textlast{
   font-family: 'IBM Plex Sans Thai', sans-serif;
-  position: relative;
+  position: absolute;
   font-size: 3vh;
   top: 30%;
-  left: 60%;
+  left: 83%;
 }
 
 .start-text-ForUpperone {
