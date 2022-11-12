@@ -1,173 +1,318 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>โฆษณาพาเฉิดฉาย</title>
+    <link rel="icon" type="image/x-icon" href="pic/first_page/iconpage.png" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="loader.css" rel="stylesheet" />
+    <link href="page3.css" rel="stylesheet" />
+    <link href="nav_3.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>โฆษณาพาเฉิดฉาย</title>
-  <link rel="icon" type="image/x-icon" href="pic/first_page/iconpage.png" />
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-  <link href="style.css" rel="stylesheet" />
-  <link href="loader.css" rel="stylesheet" />
-  <link href="page3.css" rel="stylesheet" />
-  <link href="nav_3.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="loaderNoShow">
-    <div class="iconLoadDiv">
-      <img rel="preload" src="pic/first_page/iconpage.png" class="iconLoad"/>
-      <span style="font-size: 1.5em">โฆษณาพาเฉิดฉาย</span><br />
+  <body>
+    <div class="loaderNoShow">
+      <div class="iconLoadDiv">
+        <img rel="preload" src="pic/first_page/iconpage.png" class="iconLoad" />
+        <span style="font-size: 1.5em">โฆษณาพาเฉิดฉาย</span><br />
+      </div>
+      <img rel="preload" src="pic/Loading/table.png" class="load_table" />
+      <div class="load_jar">
+        <img rel="preload" src="pic/Loading/J1.png" id="jar1" />
+        <img rel="preload" src="pic/Loading/J2.png" id="jar2" />
+        <img rel="preload" src="pic/Loading/J3.png" id="jar3" />
+      </div>
     </div>
-    <img rel="preload" src="pic/Loading/table.png" class="load_table" />
-    <div class="load_jar">
-      <img rel="preload" src="pic/Loading/J1.png" id="jar1" />
-      <img rel="preload" src="pic/Loading/J2.png" id="jar2" />
-      <img rel="preload" src="pic/Loading/J3.png" id="jar3" />
-    </div>
-  </div>
-  <div class="header">
-    <img src="pic/first_page/iconpage.png" class="iconpage" />
-    โฆษณาพาเฉิดฉาย<br />
-    <!--<div onclick="alert('กดเบอเกอร์')" class="menu">
+    <div class="header">
+      <img src="pic/first_page/iconpage.png" class="iconpage" />
+      โฆษณาพาเฉิดฉาย<br />
+      <!--<div onclick="alert('กดเบอเกอร์')" class="menu">
       ทดสอบ
     </div>--->
-  </div>
-  <div class="outer-wrapper">
-    <div class="wrapper">
-      <div class="wrapper02">
-        <div class="wrapper03">
-          <div class="slide one">
-            <img class="floor" src="pic/third_page/floor.png">
-            <div class="start-text-ForUpperone">
-              <h1>
-                โฆษณาบน<br />
-                <div class="section-text">กระดาษ</div>
-              </h1>
+    </div>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="wrapper02">
+          <div class="wrapper03">
+            <div class="slide one">
+              <img class="floor" src="pic/third_page/floor.png" />
+              <div class="start-text-ForUpperone">
+                <h1>
+                  โฆษณาบน<br />
+                  <div class="section-text">กระดาษ</div>
+                </h1>
+              </div>
+              <img class="character12" src="pic/third_page/หาบ.png" />
+              <img class="cloud01" src="pic/cloud/สิ่งพิม-01.png" />
+              <img class="cloud02" src="pic/cloud/สิ่งพิม02.png" />
+              <img class="cloud03" src="pic/cloud/สิ่งพิม-03.png" />
+              <img class="cloud01-2" src="pic/cloud/สิ่งพิม-01.png" />
+              <img class="cloud02-2" src="pic/cloud/สิ่งพิม02.png" />
+              <img class="cloud03-2" src="pic/cloud/สิ่งพิม-03.png" />
+              <img class="cloud01-3" src="pic/cloud/สิ่งพิม-01.png" />
+              <img class="cloud02-3" src="pic/cloud/สิ่งพิม02.png" />
+              <img class="cloud03-3" src="pic/cloud/สิ่งพิม-03.png" />
+              <img class="cloud01-4" src="pic/cloud/สิ่งพิม-01.png" />
+              <img class="cloud02-4" src="pic/cloud/สิ่งพิม02.png" />
+              <img class="cloud03-4" src="pic/cloud/สิ่งพิม02.png" />
+              <img class="cloud01-5" src="pic/cloud/สิ่งพิม-01.png" />
+              <img class="cloud02-5" src="pic/cloud/สิ่งพิม02.png" />
+              <img class="cloud03-5" src="pic/cloud/สิ่งพิม02.png" />
             </div>
-            <img class="character12" src="pic/third_page/หาบ.png" />
-            <img class="cloud01" src="pic/cloud/สิ่งพิม-01.png">
-            <img class="cloud02" src="pic/cloud/สิ่งพิม02.png">
-            <img class="cloud03" src="pic/cloud/สิ่งพิม-03.png">
-            <img class="cloud01-2" src="pic/cloud/สิ่งพิม-01.png">
-            <img class="cloud02-2" src="pic/cloud/สิ่งพิม02.png">
-            <img class="cloud03-2" src="pic/cloud/สิ่งพิม-03.png">
-            <img class="cloud01-3" src="pic/cloud/สิ่งพิม-01.png">
-            <img class="cloud02-3" src="pic/cloud/สิ่งพิม02.png">
-            <img class="cloud03-3" src="pic/cloud/สิ่งพิม-03.png">
-            <img class="cloud01-4" src="pic/cloud/สิ่งพิม-01.png">
-            <img class="cloud02-4" src="pic/cloud/สิ่งพิม02.png">
-            <img class="cloud03-4" src="pic/cloud/สิ่งพิม02.png">
-            <img class="cloud01-5" src="pic/cloud/สิ่งพิม-01.png">
-            <img class="cloud02-5" src="pic/cloud/สิ่งพิม02.png">
-            <img class="cloud03-5" src="pic/cloud/สิ่งพิม02.png">
-            
-          </div>
 
-          <div class="slide two">
-            <div class="slide2-text">
-              การค้าขายดำเนินต่อไปในปี พ.ศ.2407
-              <div class="text-highlight">หนังสือพิมพ์</div>
-              ฉบับแรกเกิดขึ้นในไทย
+            <div class="slide two">
+              <div class="slide2-text">
+                การค้าขายดำเนินต่อไปในปี พ.ศ.2407 ได้มีการเกิดโรงพิมพ์ขึ้นมา<br />
+                <div class="text-highlight">หนังสือพิมพ์</div>
+                ฉบับแรกจึงได้เกิดขึ้นในไทย
+              </div>
+              <img class="floor floorFlip" src="pic/third_page/floor.png" />
+              <img
+                class="shop"
+                src="pic/third_page/ร้านลุงโชค(ยุคหนังสือพิมพ์).png"
+              />
             </div>
-            <img class="floor floorFlip" src="pic/third_page/floor.png">
-            <img class="shop" src="pic/third_page/ร้านลุงโชค(ยุคหนังสือพิมพ์).png" />
-          </div>
 
-          <div class="slide three">
-            <div class="slide3-text">
-              ทำให้เกิดโรงพิมพ์ขึ้นมา ลุงโชคจึงเริ่มหันมา
-              <div class="text-highlight">โฆษณาผ่านกระดาษ</div>
+            <div class="slide three">
+              <div class="slide3-text">
+                ลุงโชคจึงเริ่มหันมา
+                <div class="text-highlight">โฆษณาผ่านกระดาษ</div>
+              </div>
+              <img class="floor" src="pic/third_page/floor.png" />
+              <img class="Board" src="pic/third_page/Board.png" />
+              <video class="Board" src="pic/webm/Board.webm" autoplay></video>
+              <img class="character29" src="pic/character/Character (29).png" />
+              <img class="character33" src="pic/character/Character (33).png" />
             </div>
-            <img class="floor" src="pic/third_page/floor.png"/>
-            <img class="Board" src="pic/third_page/Board.png"/>
-            <video class="Board" src="pic/webm/kadansorn.webm" autoplay></video>
-            <img class="character29" src="pic/character/Character (29).png" />
-            <img class="character33" src="pic/character/Character (33).png" />
-          </div>
 
-          <div class="slide four">
-            <div class="slide4-text">
-              จึงเกิดความนิยมและเข้าถึงผู้คนได้มากและ กลายเป็น
-              <div class="text-highlight">สื่อสิ่งพิมพ์</div>
-              ในรูปแบบต่างๆ
+            <div class="slide four">
+              <div class="slide4-text">
+                ร้านน้ำลุงโชคจึงเกิดความนิยมและเข้าถึงผู้คนได้มาก
+                และรูปแบบของสื่อ<br />จากที่มีเพียงหนังสือพิมพ์ก็มี
+                <div class="text-highlight">สื่อสิ่งพิมพ์</div>
+                ในรูปแบบต่างๆ เกิดขึ้น
+              </div>
+              <img class="floor floorFlip" src="pic/third_page/floor.png" />
+              <img
+                class="newspaperShop"
+                src="pic/third_page/ร้านหนังสือพิมพ์.png"
+              />
+              <img class="character11" src="pic/character/Character (11).png" />
+              <img
+                class="uncleread"
+                src="pic/third_page/ลุงอ่านหนังสือพิมพ์.png"
+              />
             </div>
-            <img class="floor floorFlip" src="pic/third_page/floor.png">
-            <img class="newspaperShop" src="pic/third_page/ร้านหนังสือพิมพ์.png" />
-            <img class="character11" src="pic/character/Character (11).png" />
-            <img class="uncleread" src="pic/third_page/ลุงอ่านหนังสือพิมพ์.png" />
-          </div>
 
-          <div class="slide five">
-            <div class="textlast">
-              หากมีโฆษณา
-              <div class="text-highlight">ทั้งภาพและเสียง</div>
-              คงจะดีไม่น้อยเลยใช่ไหม?
+            <div class="slide five">
+              <div class="textlast">
+                เเต่หากโฆษณามี
+                <div class="text-highlight">ทั้งภาพและเสียง</div>
+                คงจะดีไม่น้อยเลยใช่ไหม?
+              </div>
+              <img class="floor" src="pic/third_page/floor.png" />
+              <img class="vintagetv" src="pic/first_page/vintagetv.png" />
+              <img
+                id="character301"
+                class="character30"
+                src="pic/character/Character (30).png"
+              />
+              <img
+                id="character302"
+                class="character30"
+                src="pic/character/Character (30).png"
+              />
+              <img
+                class="character29-2"
+                src="pic/character/Character (29).png"
+              />
+              <img
+                class="btnNext"
+                src="pic/button/button2.png"
+                onclick="location.href='4_page.html'"
+              />
             </div>
-            <img class="floor" src="pic/third_page/floor.png">
-            <img class="vintagetv" src="pic/first_page/vintagetv.png" />
-            <img id="character301" class="character30" src="pic/character/Character (30).png" />
-            <img id="character302" class="character30" src="pic/character/Character (30).png" />
-            <img class="character29-2" src="pic/character/Character (29).png" />
-            <img class="btnNext" src="pic/button/button2.png" onclick="location.href='4_page.html'" />
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class = "footer"><img class="nited" src="pic/seventh_page/logo-AAD.png"><img class="it" src="pic/seventh_page/logo-IT-01.png"></div>
-  <div class="dropdown">
-    <img onclick="dropdownbtn();" class="dropbtn" src="pic/first_page/menu-icon.svg" />
-    <div id="myDropdown" class="dropdown-content dropdown_animation1">
-      <a href="index.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;"><img style="width: 1.5vw; transform: translateY(25%)"
-          src="pic/first_page/home-icon.svg" />&nbsp;Home page</a>
-      <div class="fakeHR"></div>
-      <a href="2_page.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;">ต้นกำเนิดของโฆษณา</a>
-      <div class="fakeHR"></div>
-      <a href="3_page.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;">โฆษณาบนกระดาษ</a>
-      <div class="fakeHR"></div>
-      <a href="4_page.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;">ขายจริงผ่านจอ</a>
-      <div class="fakeHR"></div>
-      <a href="5_page.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;">โฆษณาสู่ออนไลน์</a>
-      <div class="fakeHR"></div>
-      <a href="6_page.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;">เฉิดฉายสู่โลกอนาคต</a>
-      <div class="fakeHR"></div>
-      <a href="7_page.html" style="font-family: IBM Plex Sans Thai, sans-serif; letter-spacing: 2px; font-size: 18px;">โฆษณาเป็นอมตะ</a>
-      <div class="fakeHR"></div>
+    <div class="footer">
+      <img class="nited" src="pic/seventh_page/logo-AAD.png" /><img
+        class="it"
+        src="pic/seventh_page/logo-IT-01.png"
+      />
     </div>
-  </div>
-  <div class="carousel">
-    <svg id="carouselDots">
-      <defs>
-        <style>
-          .grey {
-            fill: #c9c9c9;
-            cursor: pointer;
-          }
+    <div class="dropdown">
+      <img
+        onclick="dropdownbtn();"
+        class="dropbtn"
+        src="pic/first_page/menu-icon.svg"
+      />
+      <div id="myDropdown" class="dropdown-content dropdown_animation1">
+        <a
+          href="index.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          ><img
+            style="width: 1.5vw; transform: translateY(25%)"
+            src="pic/first_page/home-icon.svg"
+          />&nbsp;Home page</a
+        >
+        <div class="fakeHR"></div>
+        <a
+          href="2_page.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          >ต้นกำเนิดของโฆษณา</a
+        >
+        <div class="fakeHR"></div>
+        <a
+          href="3_page.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          >โฆษณาบนกระดาษ</a
+        >
+        <div class="fakeHR"></div>
+        <a
+          href="4_page.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          >ขายจริงผ่านจอ</a
+        >
+        <div class="fakeHR"></div>
+        <a
+          href="5_page.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          >โฆษณาสู่ออนไลน์</a
+        >
+        <div class="fakeHR"></div>
+        <a
+          href="6_page.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          >เฉิดฉายสู่โลกอนาคต</a
+        >
+        <div class="fakeHR"></div>
+        <a
+          href="7_page.html"
+          style="
+            font-family: IBM Plex Sans Thai, sans-serif;
+            letter-spacing: 2px;
+            font-size: 18px;
+          "
+          >โฆษณาเป็นอมตะ</a
+        >
+        <div class="fakeHR"></div>
+      </div>
+    </div>
+    <div class="carousel">
+      <svg id="carouselDots">
+        <defs>
+          <style>
+            .grey {
+              fill: #c9c9c9;
+              cursor: pointer;
+            }
 
-          .active {
-            fill: #4abd68;
-          }
-        </style>
-      </defs>
-      <line stroke="#C9C9C9" stroke-width="3" class="grey" x1="9" y1="9" x2="220.41" y2="9" />
-      <circle onclick="gotoPage(1)" id="circle1" class="active" cx="9" cy="9" r="7" />
-      <circle onclick="gotoPage(2)" id="circle2" class="grey" cx="61.85" cy="9" r="7" />
-      <circle onclick="gotoPage(3)" id="circle3" class="grey" cx="114.7" cy="9" r="7" />
-      <circle onclick="gotoPage(4)" id="circle4" class="grey" cx="167.55" cy="9" r="7" />
-      <circle onclick="gotoPage(5)" id="circle5" class="grey" cx="220.41" cy="9" r="7" />
-    </svg>
-  </div>
-  <div class="nextslide">
-    <img class="btnnextslide" onclick="nextslide()"
-      src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png" />
-  </div>
-  <div class="previousslide">
-    <img class="btnpreviousslide" onclick="previousslide()"
-      src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png" />
-  </div>
-</body>
-<script src="script.js"></script>
+            .active {
+              fill: #4abd68;
+            }
+          </style>
+        </defs>
+        <line
+          stroke="#C9C9C9"
+          stroke-width="3"
+          class="grey"
+          x1="9"
+          y1="9"
+          x2="220.41"
+          y2="9"
+        />
+        <circle
+          onclick="gotoPage(1)"
+          id="circle1"
+          class="active"
+          cx="9"
+          cy="9"
+          r="7"
+        />
+        <circle
+          onclick="gotoPage(2)"
+          id="circle2"
+          class="grey"
+          cx="61.85"
+          cy="9"
+          r="7"
+        />
+        <circle
+          onclick="gotoPage(3)"
+          id="circle3"
+          class="grey"
+          cx="114.7"
+          cy="9"
+          r="7"
+        />
+        <circle
+          onclick="gotoPage(4)"
+          id="circle4"
+          class="grey"
+          cx="167.55"
+          cy="9"
+          r="7"
+        />
+        <circle
+          onclick="gotoPage(5)"
+          id="circle5"
+          class="grey"
+          cx="220.41"
+          cy="9"
+          r="7"
+        />
+      </svg>
+    </div>
+    <div class="nextslide">
+      <img
+        class="btnnextslide"
+        onclick="nextslide()"
+        src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png"
+      />
+    </div>
+    <div class="previousslide">
+      <img
+        class="btnpreviousslide"
+        onclick="previousslide()"
+        src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png"
+      />
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>

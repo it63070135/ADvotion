@@ -29,7 +29,7 @@
 .slide1-texthighlight {
   color: #ec5a38;
 }
-.slide1-text{
+.slide1-text {
   width: 100vw;
   height: 100vh;
   background-image: url("pic/second_page/floor.png");
@@ -63,12 +63,12 @@
   text-align: center;
   top: 18%;
 }
-.textlast{
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+.textlast {
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: absolute;
   font-size: 3vh;
-  top: 20%;
-  left: 82%;
+  top: 30%;
+  left: 84%;
 }
 .dog {
   transform-style: preserve-3d;
@@ -77,7 +77,7 @@
   width: 8vw;
   height: auto;
   left: 38vw;
-  bottom:20vh;
+  bottom: 20vh;
   /*transform: translate(-50%, -50%);*/
 }
 
@@ -86,17 +86,16 @@
   transform: translate(80%, 35%);
   font-size: 5vh;
 }
-.section-text{
+.section-text {
   color: #ec5a38;
 }
-
 
 .text-highlight {
   color: #ec5a38;
   display: inline-block;
   font-size: 3.5vh;
 }
-h1{
+h1 {
   font-size: 10vh;
 }
 
@@ -131,7 +130,6 @@ h1{
   height: auto;
   left: 155vw;
   bottom: 10vh;
-
 }
 .character29-1 {
   transform-style: preserve-3d;
@@ -141,7 +139,6 @@ h1{
   height: auto;
   left: 132vw;
   bottom: 17vh;
-
 }
 .uncle {
   transform-style: preserve-3d;
@@ -173,7 +170,7 @@ h1{
   transform: scaleX(-1);
 }
 /* slide 3 */
-.orangetree{
+.orangetree {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -211,7 +208,7 @@ h1{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.character28{
+.character28 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -222,7 +219,7 @@ h1{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.character29_4{
+.character29_4 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -231,7 +228,7 @@ h1{
   left: 326vw;
   bottom: -2vh;
 }
-.character33_4{
+.character33_4 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -242,7 +239,7 @@ h1{
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.character9{
+.character9 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -251,7 +248,7 @@ h1{
   left: 483vw;
   bottom: 20vh;
 }
-.newspaper{
+.newspaper {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -261,7 +258,7 @@ h1{
   bottom: 15vh;
   transform: rotate(-13deg);
 }
-.character10{
+.character10 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -269,9 +266,9 @@ h1{
   height: auto;
   left: 450vw;
   bottom: 15vh;
-  transform:scaleX(-1);
+  transform: scaleX(-1);
 }
-.character38{
+.character38 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -280,37 +277,35 @@ h1{
   left: 405vw;
   bottom: -9vh;
 }
-.btnNext{
+.btnNext {
   width: 15vw;
   height: auto;
-  left: 90%;
-  top: 33%;
+  left: 88%;
+  top: 90%;
   transform: translate(-50%, -50%);
   position: relative;
   cursor: pointer;
 }
-.buttonpress{
+.buttonpress {
   position: relative;
   z-index: 20;
-  height:auto;
+  height: auto;
   width: 1.5vw;
-  transform:translate(-50%) rotate(90deg);
-  left:50%;
+  transform: translate(-50%) rotate(90deg);
+  left: 50%;
   /*left:242.5vw;
   top: 37vh;*/
   opacity: 0.7;
 }
-.textpress{
-  position:absolute;
+.textpress {
+  position: absolute;
   z-index: 20;
-  height:6em;
+  height: 6em;
   width: auto;
-  transform:translate(50%, 50%);
-  left:239.5vw;
+  transform: translate(50%, 50%);
+  left: 239.5vw;
   top: 32vh;
 }
-
-
 
 /* for phone */
 @media screen and (max-width: 992px) {
@@ -321,7 +316,7 @@ h1{
     width: 25vw;
     height: auto;
     left: 40vw;
-    bottom:22vh;
+    bottom: 22vh;
     /*transform: translate(-50%, -50%);*/
   }
   .text-highlight {
@@ -420,7 +415,7 @@ h1{
     left: 352vw;
     bottom: 22vh;
   }
-  .character33_4{
+  .character33_4 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
@@ -431,7 +426,7 @@ h1{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
-  .character29_4{
+  .character29_4 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
@@ -451,7 +446,7 @@ h1{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
-  .character28{
+  .character28 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
@@ -462,7 +457,7 @@ h1{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
-  .character9{
+  .character9 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;

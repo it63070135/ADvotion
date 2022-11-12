@@ -165,7 +165,17 @@
   width: 35vw;
   height: auto;
   left: 130vw;
-  bottom: -50vh;
+  bottom: -40vh;
+}
+.Board {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 30vw;
+  height: auto;
+  top: 13%;
+  left: 146vw;
+  opacity: 0.7;
 }
 
 .character5 {
@@ -185,7 +195,17 @@
   width: 35vw;
   height: auto;
   left: 345vw;
-  bottom: -33vh;
+  bottom: -20vh;
+}
+.DoubleBoard {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 20vw;
+  height: auto;
+  left: 343vw;
+  bottom: 15vh;
+  opacity: 0.6;
 }
 
 .character6 {
@@ -352,14 +372,16 @@ h1 {
   z-index: 5;
   width: 15vw;
   height: auto;
-  left: 478vw;
+  left: 457vw;
   bottom: 3vh;
 }
 
 .btnNext {
+  transform-style: preserve-3d;
+  z-index: 6;
   width: 15vw;
   height: auto;
-  left: 50%;
+  left: 88%;
   top: 85%;
   transform: translate(-50%, -50%);
   position: relative;

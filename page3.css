@@ -37,8 +37,8 @@
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
-  text-align: center;
   top: 18%;
+  left: 25%;
 }
 .slide4-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
@@ -54,14 +54,14 @@
   text-align: center;
   top: 18%;
 }
-.textlast{
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+.textlast {
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: absolute;
   font-size: 3vh;
-  top: 30%;
-  left: 92%;
+  top: 25%;
+  left: 82%;
 }
-.character12{
+.character12 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -71,7 +71,6 @@
   left: 30vw;
   bottom: 18.5vh;
 }
-
 
 .text-highlight {
   color: #4abd68;
@@ -132,14 +131,14 @@
   left: 230vw;
   bottom: 20vh;
 }
-.character29-2{
+.character29-2 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
   width: 20vw;
   height: auto;
-  left: 472vw;
-  bottom: -28vh;
+  left: 465vw;
+  bottom: -20vh;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -149,7 +148,7 @@
   z-index: 5;
   width: 30vw;
   height: auto;
-  left: 340vw;
+  left: 336vw;
   bottom: 20vh;
 }
 .character33 {
@@ -163,7 +162,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.Board{
+.Board {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -172,13 +171,13 @@
   left: 240vw;
   bottom: 25vh;
 }
-.vintagetv{
+.vintagetv {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
   width: 10vw;
   height: auto;
-  left: 460vw;
+  left: 448vw;
   bottom: 20vh;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -187,16 +186,16 @@
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 15vw;
+  width: 10vw;
   height: auto;
 }
 #character301 {
-  left: 465vw;
-  bottom: 0vh;
+  left: 458vw;
+  bottom: 12vh;
 }
 #character302 {
-  left: 478vw;
-  bottom: 10vh;
+  left: 474vw;
+  bottom: 19vh;
 }
 .character13 {
   transform-style: preserve-3d;
@@ -224,29 +223,29 @@
   z-index: 5;
   width: 8vw;
   height: auto;
-  left: 366vw;
-  bottom: 20vh;
+  left: 363vw;
+  bottom: 15vh;
 }
 .start-text-ForUpperone {
   position: absolute;
   transform: translate(80%, 35%);
   font-size: 5vh;
 }
-.section-text{
+.section-text {
   color: #4abd68;
-
 }
-h1{
+h1 {
   font-size: 10vh;
 }
-.btnNext{
+.btnNext {
   transform-style: preserve-3d;
-  position: absolute;
-  z-index: 5;
+  z-index: 6;
   width: 15vw;
   height: auto;
-  left: 480vw;
-  bottom: 48vh;
+  left: 88%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  position: relative;
   cursor: pointer;
 }
 
@@ -258,7 +257,7 @@ h1{
     font-size: 2.5vh;
   }
   /* slide 1 */
-  .character12{
+  .character12 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
@@ -295,7 +294,7 @@ h1{
     text-align: center;
     top: 25%;
   }
-  .Board{
+  .Board {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
@@ -360,7 +359,7 @@ h1{
     text-align: center;
     top: 25%;
   }
-  .vintagetv{
+  .vintagetv {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;

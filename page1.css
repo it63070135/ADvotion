@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   scroll-snap-align: center;
- /* background-image: url("pic/first_page/blue_ground.png");*/
+  /* background-image: url("pic/first_page/blue_ground.png");*/
   background-size: 100vw 100vh;
   background-position: left bottom;
 }
@@ -30,42 +30,48 @@
 }
 
 .slide2-text {
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
   text-align: center;
   top: 18%;
-
 }
 
 .slide3-text {
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
   text-align: center;
   top: 18%;
-
 }
 
 .slide4-text {
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
   text-align: center;
   top: 18%;
+}
 
+.slide4-subtext {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  position: relative;
+  font-size: 1.5vh;
+  text-align: center;
+  top: 38%;
+  left: 8%;
 }
 
 .slide5-text {
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
   text-align: center;
   top: 18%;
 }
 
-.textlast{
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+.textlast {
+  font-family: "IBM Plex Sans Thai", sans-serif;
   position: absolute;
   font-size: 3vh;
   top: 20%;
@@ -95,7 +101,7 @@
 }
 
 .text-highlight {
-  color: #00A3DA;
+  color: #00a3da;
   display: inline-block;
   font-size: 3.5vh;
 }
@@ -247,7 +253,6 @@
   bottom: 3vh;
 }
 
-
 .character29 {
   left: 420vw;
   position: absolute;
@@ -258,8 +263,8 @@
 .btnNext {
   width: 15vw;
   height: auto;
-  left: 82%;
-  top: 32%;
+  left: 88%;
+  top: 90%;
   transform: translate(-50%, -50%);
   position: relative;
   cursor: pointer;
@@ -290,19 +295,18 @@
   }
 
   .text-highlight {
-    color: #00A3DA;
+    color: #00a3da;
     display: inline-block;
     font-size: 2.5vh;
   }
 
   /* slide 2 */
   .slide2-text {
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
     top: 18%;
-
   }
 
   .sign {
@@ -329,7 +333,7 @@
 
   /* slide 3 */
   .slide3-text {
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
@@ -392,12 +396,11 @@
   }
 
   .slide4-text {
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
     top: 25%;
-
   }
 
   /*Slide 5*/
@@ -418,7 +421,6 @@
     height: auto;
     left: 430vw;
     bottom: 23vh;
-
   }
 
   .vintagetv {
@@ -427,7 +429,6 @@
     height: auto;
     left: 475vw;
     bottom: 23vh;
-
   }
 
   .character30 {
@@ -464,7 +465,7 @@
   }
 
   .slide5-text {
-    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
