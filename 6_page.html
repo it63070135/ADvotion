@@ -40,7 +40,7 @@
       ทดสอบ
     </div>--->
     </div>
-    <div class="outer-wrapper">
+    <div class="outer-wrapper" id="popupcontrol">
       <div class="wrapper">
         <div class="wrapper02">
           <div class="wrapper03">
@@ -52,7 +52,7 @@
                   <div class="section-text">โลกอนาคต</div>
                 </h1>
               </div>
-              <img class="character6" src="pic/character/Character (6).png" />
+              <img @click="showPopup(7, 1)" class="character6" src="pic/character/Character (6).png" />
               <img class="cloud01" src="pic/cloud/อนาคต-01.png" />
               <img class="cloud02" src="pic/cloud/อนาคต-02.png" />
               <img class="cloud03" src="pic/cloud/อนาคต-03.png" />
@@ -71,8 +71,8 @@
             </div>
 
             <div class="slide two">
-              <img class="character4" src="pic/character/Character (4).png" />
-              <video
+              <img @click="showPopup(6, 1)" class="character4" src="pic/character/Character (4).png" />
+              <video @click="showPopup(6, 1)"
                 class="Board"
                 src="pic/webm/กระดานเรืองแสง+โฆษณาลุง.webm"
                 autoplay
@@ -99,6 +99,7 @@
               <img class="character3" src="pic/character/Character (3).png" />
               <img class="character5" src="pic/character/Character (5).png" />
               <img class="uncle" src="pic/character/Character (7).png" />
+              <img class="light" src="pic/sixth_page/ใต้เท้าลุง-01.png" />
             </div>
 
             <div class="slide four">
@@ -114,7 +115,7 @@
                 autoplay
                 loop
               ></video>
-              <img class="character1" src="pic/character/Character (1).png" />
+              <img @click="showPopup(6, 2)" class="character1" src="pic/character/Character (1).png" />
             </div>
 
             <div class="slide five">
@@ -311,6 +312,21 @@
         onclick="previousslide()"
         src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png"
       />
+    </div>
+    <div id="popup" class="popup" v-if="showingPopup">
+      <div @click="closePopup()" class="popupBG"></div>
+  
+      <div class="popupCard">
+        <img :src="showingIMG" class="popupImg" /><br>
+        <div class="popupHeader">
+          <span>
+            {{showingHeader}}</span>
+        </div><br>
+        <span class="popupContent">
+          {{showingContent}}</span>
+        <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png" />
+      </div>
+  
     </div>
   </body>
   <script src="script.js"></script>

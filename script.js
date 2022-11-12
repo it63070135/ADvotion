@@ -118,16 +118,26 @@ var app = new Vue({
     data: {
         showingIMG: "",
         showingContent: "",
+        showingHeader: "",
         showingPopup: false,
-        "page1": [{ img: "", content: "" }],
-        "page2": [{ img: "pic/character/Character (7).png", content: "เฮ้หนูมาดูนี่ซิ" }],
-        "page3": [{ img: "", content: "" }],
-        "page4": [{ img: "", content: "" }],
-        "page5": [{ img: "", content: "" }],
-        "page6": [{ img: "", content: "" }],
-        "page7": [{ img: "pic/character/Character (7).png", content: "Lorem ipsum setyor 2 hor saikai khao jong jar len khun" },
-        { img: "pic/character/Character (7).png", content: "ลุงคนนี้ก็ใจเกเรมาก" },
-        { img: "pic/character/Character (7).png", content: "ลุงคนนี้ก็ใจเกเรมากๆเช่นกัน" }]
+        "page1": [{ img: "", header: "", content: "" }],
+        "page2": [{ img: "pic/character/Character (8).png", header: "ผู้ป่าวประกาศ", content: "คือผู้โฆษณาที่ใช้เสียงเป็นสื่อกลางในการประกาศสรรพคุณหรือสิ่งของที่จะขาย ผู้ป่าวประกาศมักจะเป็นผู้ที่มีเสียงดังน่าฟัง มีเทคนิคการใช้เสียงหรือวิธีพูดที่เป็นเอกลักษณ์ ดึงดูดความสนใจ" }],
+        "page3": [{ img: "pic/character/Character (7).png", header: "ใบปลิว", content: "ถือเป็นโฆษณาขนาดเล็กที่สามารถเห็นได้ทุกที่ หรือแม้แต่แจกถึงมือ จึงเป็นการโฆษณาที่เข้าถึงผู้คนได้อย่างกว้างขว้างโดยที่ผู้รับสารไม่ต้องเสียค่าใช้จ่าย" },
+        { img: "pic/third_page/popupหนังสือพิมพ์ฉบับแรก.png", header: "หนังสือพิมพ์ฉบับแรก", content: "เป็นหนังสือพิมพ์ชิ่อ The Bangkok Recoder หรือหนังสือพิมพ์จดหมายเหตุ วางจำหน่ายครั้งแรกเมื่อวันที่ 4 กรกฏาคม พ.ศ. 2387 และเริ่มมีโฆษณาครั้งแรกโดย อู่ต่อเรือบางกอกด๊อก" },
+        { img: "pic/third_page/popupนิตยสาร.png", header: "นิตยสาร", content: "เป็นหนังสือพิมพ์เนื้อหาหลากหลายมุ่งทั้งให้ความรู้และความบันเทิงในเฉพาะกลุ่มได้ดีกว่าหนังสือพิมพ์ ดังนั้นโฆษณาในนิตยสารจึงมีข้อดีที่สามารถประชาสัมพันธ์มห้กับคนที่เป็นกลุ่มเป้าหมายโดยตรงได้" },
+        { img: "pic/third_page/popupหนังสือพิมพ์.jpg", header: "หนังสือพิมพ์", content: "เป็นช่องทางในการติดตามข่าวสารบ้านเมืองที่นิยมในสมัยนั้น จึงเข้าถึงผู้คนได้อยํางกว้างขวาง การโฆษณาจึงเข้ามามีบทบาทเพื่อประชาสัมพันธ์สินค้าของตน" }],
+        "page4": [{ img: "pic/fourth_page/popupเสาอากาศ.png", header: "เสาอากาศ", content: "หน้าที่รับสัญญาณจากสถานีส่งสัญญาณทีวีมายังทีวีในบ้าน ซึ่งจะติดตั้งภายในอาคารหรือภายนอกอาคารก็ได้" },
+        { img: "", header: "โฆษณาตัวแรกของไทย", content: "โฆษณารถยนต์เปอร์โย 204 โดย สถานีไทยโทรทัศน์ช่อง ๕ บางขุนพรหม ซึ่งถือเป็นก้าวแรกของวงการโทรทัศน์ในประเทศไทย" },
+        { img: "pic/fourth_page/popupทีวี.png", header: "โทรทัศน์", content: "เป็นระบบอนาล็อก เริ่มแรกเป็นสื่อที่ใช้สําหรับบอกข่าวสารจากกองทัพทหารแต่ต่อมาเริ่มนํามาใช้สําหรับการบันเทิงและโฆษณา ซึ่งได้รับความนิยมอย่างมากเพราะเห็นได้ทั้งภาพและเสียง" },
+        { img: "pic/second_page/newspaper.png", header: "หนังสือพิมพ์", content: "หนังสือพิมพ์มีความน่าสนใจมากขึ้นเนื่องจากการจัดคอลัมน์และภาพที่เป็นแบบสี แต่ความนิยมก็น้อยลงเนื่องจากการมาของโทรทัศน์" }],
+        "page5": [{ img: "", header: "โปสเตอร์", content: "มักจะเป็นโปสเตอร์หรือไวนิลที่ติดตามร้านอาหารข้างทางซึ่งจะเกี่ยวข้องกับสิ่งที่ขายในร้านด้วยเช่นกัน" },
+        { img: "", header: "โทรศัพท์มือถือ", content: "โฆษณาดิจิทัลจะเป็นสื่อที่บริษัทโฆษณานําเงินมหาศาลมาลงมากกว่าโฆษณาผ่านทางโทรทัศน์เนื่องจากสามารถเข้าถึงคนที่ต้องการสินค้านั้นได้ง่ายขึ้นมากจากการค้นหาหรือพฤติกรรมผู้ใช้" },
+        { img: "", header: "โทรทัศน์ดิจิทัล", content: "สามารถติดตั้งต่อสัญญาณได้ง่าย โทรศัพท์มีความคมชัด สีสวยกว่ายุคเก่ามาก ปัจจุบันยังมีโฆษณาตามโทรทัศน์อยู่ แต่มีค่าใช้จ่ายที่สูง บริษัทต่างๆจึงหันไปโฆษณาผ่านอินเตอร์เน็ตมากกว่า" }],
+        "page6": [{ img: "", header: "VR และ AR", content: "คาดว่าจะเป็นเทคโนโลยีที่จะมามีบทบาทในอนาคตอย่างแน่นอน เนื่องจากสามารถเพิ่มอรรถรสในการใช้งานได้ดีขึ้นมาก แสดงสินค้าแบบ 3 มิติในโทรศัพท์มือถือ หรือการเล่นเกมที่เหมือนหลุดไปอีกโลกหนึ่งผ่านแว่น VR" },
+        { img: "", header: "เมตาเวิร์ส", content: "เทคโนโลยีที่จะให้เราเข้าไปสู่โลกแห่งจินตนาการ จะได้ทำสิ่งต่างๆ ทั้งทำงาน เล่นเกม ชมคอนเสิร์ต หรือแค่การออกไปสังสรรค์กับเพื่อนและทำให้เกิดคอนเทนท์ใหม่ๆปรากฏในหลายจุดตอบโจทย์แต่ละคนแตกต่างกัน" }],
+        "page7": [{ img: "pic/character/Character (7).png", header: "This is Header", content: "Lorem ipsum setyor 2 hor saikai khao jong jar len khun" },
+        { img: "pic/character/Character (7).png", header: "", content: "ลุงคนนี้ก็ใจเกเรมาก" },
+        { img: "pic/character/Character (7).png", header: "", content: "ลุงคนนี้ก็ใจเกเรมากๆเช่นกัน" }]
     },
     methods: {
         closePopup: function () {
@@ -145,9 +155,20 @@ var popupcontroller = new Vue({
             pageNum = "page" + pageNum
 
             app.showingIMG = app[pageNum][popupNum].img
+            app.showingHeader = app[pageNum][popupNum].header
             app.showingContent = app[pageNum][popupNum].content
             app.showingPopup = !app.showingPopup
+            popupImgAdjuster()
         }
     }
 })
+
+function popupImgAdjuster() {
+    //Adjust content to img
+    curImg = document.getElementsByClassName("popupImg")[0]
+    topAmount = curImg.height / -2
+    topAmount = topAmount + 'px'
+    document.getElementsByClassName("popupHeader")[0].style.top = topAmount
+    document.getElementsByClassName("popupContent")[0].style.top = topAmount
+}
 

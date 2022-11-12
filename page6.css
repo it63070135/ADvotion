@@ -154,7 +154,7 @@
   z-index: 5;
   width: 15vw;
   height: auto;
-  left: 248vw;
+  left: 260vw;
   bottom: 0vh;
 }
 
@@ -184,7 +184,7 @@
   z-index: 5;
   width: 15vw;
   height: auto;
-  left: 235vw;
+  left: 220vw;
   bottom: 0vh;
 }
 
@@ -235,10 +235,20 @@
   transform-style: preserve-3d;
   position: absolute;
   z-index: 4;
-  width: 9vw;
+  width: 11vw;
   height: auto;
-  left: 245vw;
+  left: 244vw;
   bottom: 20vh;
+}
+.light{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 4;
+  width: 25vw;
+  height: auto;
+  left: 237.2vw;
+  bottom: 20vh;
+  opacity: 0.8;
 }
 
 .uncle-5 {
@@ -264,7 +274,7 @@
 .uncle_shop {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 4;
+  z-index: 3;
   width: 35vw;
   height: auto;
   left: 232vw;

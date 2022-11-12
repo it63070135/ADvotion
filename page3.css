@@ -104,11 +104,21 @@
 .shop {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   width: 25vw;
   height: auto;
   left: 137vw;
   bottom: 20vh;
+}
+
+.News{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  height: auto;
+  left: 154.5vw;
+  bottom: 40vh;
 }
 
 /*.aunt {
@@ -142,7 +152,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.newspaperShop {
+.divnewspaperShop {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -150,6 +160,30 @@
   height: auto;
   left: 336vw;
   bottom: 20vh;
+}
+.newspaperShop {
+  width: 30vw;
+  height: auto;
+}
+.divpopup1{
+  position:absolute;
+  /*background-color:red; */
+  width:55%; 
+  height:30%; 
+  top:32%;
+  left:50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+.divpopup2{
+  position:absolute;
+  /*background-color:blue; */
+  width:57%; 
+  height:18%; 
+  top:62%;
+  left:49.5%;
+  transform: translateX(-50%);
+  opacity: 0.5;
 }
 .character33 {
   transform-style: preserve-3d;
@@ -248,7 +282,75 @@ h1 {
   position: relative;
   cursor: pointer;
 }
-
+.buttonpress1 {
+  position: relative;
+  z-index: 20;
+  height: auto;
+  width: 1.5vw;
+  transform: translate(-50%) rotate(90deg);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+.textpress1 {
+  position: absolute;
+  z-index: 20;
+  height: 6em;
+  width: auto;
+  transform: translate(50%, 50%);
+  left: 239.5vw;
+  top: 32vh;
+}
+.buttonpress2 {
+  position: relative;
+  z-index: 20;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+.textpress2 {
+  position: absolute;
+  z-index: 20;
+  height: auto;
+  width: auto;
+  transform: translateX(-50%) translateY(-120%);
+  left: 50%;
+  top: 0%;
+  animation: buttonpress2up_down 1s infinite;
+}
+@keyframes buttonpress2up_down {
+  0%   {transform: translateX(-50%) translateY(-120%);}
+  50%   {transform: translateX(-50%) translateY(-135%);}
+  100% {transform: translateX(-50%) translateY(-120%);}
+}
+.buttonpress3 {
+  position: relative;
+  z-index: 20;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+.textpress3 {
+  position: absolute;
+  z-index: 20;
+  height: auto;
+  width: auto;
+  transform: translateX(-50%) translateY(20%) rotate(180deg);
+  left: 50%;
+  top: 100%;
+  animation: buttonpress3up_down 1s infinite;
+}
+@keyframes buttonpress3up_down {
+  0%   {transform: translateX(-50%) translateY(20%) rotate(180deg);}
+  50%   {transform: translateX(-50%) translateY(35%) rotate(180deg);}
+  100% {transform: translateX(-50%) translateY(20%) rotate(180deg);}
+}
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {

@@ -166,42 +166,51 @@ h1 {
   transform-style: preserve-3d;
   z-index: 420;
   width:100vw;
-  height: 100vh;  
+  height: 100vh; 
 }
 
 .popupImg{
   display:block;
-  width:15vw;
+  height:35vh;
   /* position: absolute; */
   position:relative;
   transform-style: preserve-3d;
   z-index: 423;
   left: 50%;
   transform:translateX(-50%) translateY(-50%);
+  animation: bounceIn 0.5s;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
 }
 
-/*.popupContent{
-  position: absolute;
-  top: 30%;
-}*/
+.popupHeader{
+  position: relative;
+  top: -25%;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0%;
+}
+
 .popupContent{
   position: relative;
   top: -25%;
+  font-family: IBM Plex Sans Thai, sans-serif;
 }
 .popupCard{
   display:block;
   transform-style: preserve-3d;
   z-index: 422;
   position: absolute;
-  width: 30vw;
+  width: 20vw;
   height: 70vh;
-  background-color: pink;
+  background-color: rgb(224, 221, 221);
   left: 50%;
-  top:60%;
+  top:58%;
   transform: translateX(-50%) translateY(-50%);
+  animation: bounceIn 0.5s;
   justify-content: center;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  border-radius: 10%;
 }
 
 .popupBG{
@@ -212,15 +221,46 @@ h1 {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0.75);
+  animation: fadeIn 0.5s;
 }
 
 .popupExit{
+  cursor: pointer;
   position: absolute;
   width: 4vw;
   left:50%;
   top:60vh;
   transform: translateX(-50%);
 }
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(-50%) scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1) translate3d(0,0,0);
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    background-color: rgba(0,0,0,0);
+  }
+  100%{
+    background-color: rgba(0,0,0,0.75);
+  }
+}
+
 .cloudhouse{
   display: flex;
   flex-direction: row;
@@ -415,6 +455,8 @@ h1 {
 
 }
 .footer{
+  padding-top: 1%;
+  padding-bottom: 1%;
   display:flex;
   bottom: 0%;
   left:0%;
@@ -480,4 +522,28 @@ h1 {
   to {
     left: 480vw;
   }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    font-size: 40px;
+    margin-top: 5%;
+    visibility: visible;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+  .start-text {
+    position: absolute;
+    transform: translate(60%, 80%);
+    transform-style: preserve-3d;
+    z-index: 1;
+  }
+  h1 {
+    font-size: 80px;
+  }
+
 }

@@ -175,13 +175,17 @@
       src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png" />
   </div>
   <div id="popup" class="popup" v-if="showingPopup">
-    <div @click="closePopup()" class="popupBG" ></div>
-    
+    <div @click="closePopup()" class="popupBG"></div>
+
     <div class="popupCard">
       <img :src="showingIMG" class="popupImg" /><br>
+      <div class="popupHeader">
+        <span>
+          {{showingHeader}}</span>
+      </div><br>
       <span class="popupContent">
-      {{showingContent}}</span>
-      <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png"/>
+        {{showingContent}}</span>
+      <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png" />
     </div>
 
   </div>

@@ -40,7 +40,7 @@
       ทดสอบ
     </div>--->
     </div>
-    <div class="outer-wrapper">
+    <div class="outer-wrapper" id="popupcontrol">
       <div class="wrapper">
         <div class="wrapper02">
           <div class="wrapper03">
@@ -81,6 +81,10 @@
                 class="shop"
                 src="pic/third_page/ร้านลุงโชค(ยุคหนังสือพิมพ์).png"
               />
+              <img @click="showPopup(3, 2)"
+                class="News"
+                src="/pic/third_page/popupหนังสือพิมพ์ฉบับแรก.png"
+              />
             </div>
 
             <div class="slide three">
@@ -90,9 +94,16 @@
               </div>
               <img class="floor" src="pic/third_page/floor.png" />
               <img class="Board" src="pic/third_page/Board.png" />
-              <video class="Board" src="pic/webm/Board.webm" autoplay></video>
+              <video @click="showPopup(3, 1)" class="Board" src="pic/webm/Board.webm" autoplay loop></video>
               <img class="character29" src="pic/character/Character (29).png" />
               <img class="character33" src="pic/character/Character (33).png" />
+              <div class="textpress1">
+                ลองกดดูสิ<br />
+                <img
+                  class="buttonpress1"
+                  src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png"
+                />
+              </div>
             </div>
 
             <div class="slide four">
@@ -103,10 +114,25 @@
                 ในรูปแบบต่างๆ เกิดขึ้น
               </div>
               <img class="floor floorFlip" src="pic/third_page/floor.png" />
-              <img
-                class="newspaperShop"
-                src="pic/third_page/ร้านหนังสือพิมพ์.png"
-              />
+              <div class="divnewspaperShop">
+                <img class="newspaperShop" src="pic/third_page/ร้านหนังสือพิมพ์.png"/>
+                <div @click="showPopup(3, 4)" class="divpopup1">
+                  <div class="textpress2">
+                    <img
+                      class="buttonpress2"
+                      src="pic/button/clickHereButton (3).png"
+                    />
+                  </div>
+                </div>
+                <div @click="showPopup(3, 3)" class="divpopup2">
+                  <div class="textpress3">
+                    <img
+                      class="buttonpress3"
+                      src="pic/button/clickHereButton (3).png"
+                    />
+                  </div>
+                </div>
+              </div>
               <img class="character11" src="pic/character/Character (11).png" />
               <img
                 class="uncleread"
@@ -312,6 +338,21 @@
         onclick="previousslide()"
         src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png"
       />
+    </div>
+    <div id="popup" class="popup" v-if="showingPopup">
+      <div @click="closePopup()" class="popupBG"></div>
+  
+      <div class="popupCard">
+        <img :src="showingIMG" class="popupImg" /><br>
+        <div class="popupHeader">
+          <span>
+            {{showingHeader}}</span>
+        </div><br>
+        <span class="popupContent">
+          {{showingContent}}</span>
+        <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png" />
+      </div>
+  
     </div>
   </body>
   <script src="script.js"></script>
