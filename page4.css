@@ -124,24 +124,27 @@ h1 {
     left: 142vw;
     bottom: 19.5vh;
   } */
-
-.shopTv {
+.divshopTv {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 30vw;
-  height: auto;
   left: 123vw;
   bottom: 15vh;
 }
-.shopNews {
+.shopTv {
+  width: 30vw;
+  height: auto;
+}
+.divshopNews{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 30vw;
-  height: auto;
   left: 153vw;
   bottom: 15vh;
+}
+.shopNews {
+  width: 30vw;
+  height: auto;
 }
 .uncle {
   transform-style: preserve-3d;
@@ -189,14 +192,36 @@ h1 {
   left: 360vw;
   bottom: 0vh;
 }
-.shopUncleChoke {
+.divshopUncleChoke{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 45vw;
-  height: auto;
   left: 228vw;
   bottom: 17vh;
+}
+.shopUncleChoke {
+  width: 45vw;
+  height: auto;
+}
+.divpopup1 {
+  position: absolute;
+  background-color:red; 
+  width: 10%;
+  height: 22%;
+  top: 0%;
+  left: 87%;
+  /*transform: translateX(-50%);*/
+  opacity: 0.5;
+}
+.divpopup2 {
+  position: absolute;
+  background-color:blue; 
+  width: 13%;
+  height: 23%;
+  top: 46%;
+  left: 74%;
+  /*transform: translateX(-50%);*/
+  opacity: 0.5;
 }
 .character17 {
   transform-style: preserve-3d;
@@ -252,11 +277,11 @@ h1 {
 .textpress {
   position: absolute;
   z-index: 200;
-  height: 6em;
+  height: auto;
   width: auto;
-  transform: translateX(-50%) translateY(-150%);
-  left: 138vw;
-  top: 45vh;
+  transform: translateX(-50%) translateY(-135%);
+  left: 50%;
+  top: 0%;
   animation: buttonpress2up_down 1s infinite;
 }
 .buttonpress {
@@ -273,11 +298,11 @@ h1 {
 .textpress1 {
   position: absolute;
   z-index: 200;
-  height: 6em;
+  height: auto;
   width: auto;
-  transform: translateX(-50%) translateY(-150%);
-  left: 168vw;
-  top: 45vh;
+  transform: translateX(-50%) translateY(-135%);
+  left: 50%;
+  top: 0%;
   animation: buttonpress2up_down 1s infinite;
 }
 .buttonpress1 {
@@ -302,13 +327,77 @@ h1 {
     transform: translateX(-50%) translateY(-120%);
   }
 }
+.textpress2 {
+  position: absolute;
+  z-index: 200;
+  height: auto;
+  width: auto;
+  transform: translateX(-50%) translateY(-135%);
+  left: 50%;
+  top: 0%;
+  animation: buttonpress2up_down 1s infinite;
+}
+.buttonpress2 {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+.textpress3 {
+  position: absolute;
+  z-index: 200;
+  height: auto;
+  width: auto;
+  transform: translateX(-50%) translateY(-135%);
+  left: 50%;
+  top: 0%;
+  animation: buttonpress2up_down 1s infinite;
+}
+.buttonpress3 {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
 
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {
-    color: #00a3da;
+    color: #485bcf;
     display: inline-block;
     font-size: 2.5vh;
+  }
+
+  /* slide 1 */
+  .character19 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 75vw;
+    height: auto;
+    min-width: 350px;
+    left: 43vw;
+    bottom: -13vh;
+    /* transform: translate(-50%, -50%); */
+  }
+  .character18 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    min-width: 160px;
+    left: 0vw;
+    bottom: 23vh;
+    /*transform: translate(-50%, -50%);*/
   }
 
   /* slide 2 */
@@ -319,6 +408,44 @@ h1 {
     text-align: center;
     top: 18%;
   }
+  .shopTv {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 100vw;
+    bottom: 23vh;
+  }
+  .shopNews {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 151vw;
+    bottom: 23vh;
+  }
+  .buttonpress {
+    position: relative;
+    z-index: 200;
+    height: auto;
+    width: 7vw;
+    transform: translate(-50%);
+    left: -150%;
+    /* left:242.5vw; */
+    bottom: -13vh;
+  }
+  .buttonpress1 {
+    position: relative;
+    z-index: 200;
+    height: auto;
+    width: 7vw;
+    transform: translate(-50%);
+    left: 150%;
+    /* left:242.5vw; */
+    bottom: -13vh;
+  }
 
   /* slide 3 */
   .slide3-text {
@@ -328,63 +455,124 @@ h1 {
     text-align: center;
     top: 25%;
   }
-  .uncle {
+  .shopUncleChoke {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    width: 100vw;
     height: auto;
-    left: 211vw;
-    bottom: 22vh;
-  }
-  .aunt {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 252vw;
-    bottom: 22vh;
+    left: 220vw;
+    bottom: 20vh;
   }
   .character29 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 42vw;
+    width: 35vw;
     height: auto;
-    left: 263vw;
-    bottom: 7vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    left: 190vw;
+    bottom: 8vh;
   }
-  /* slide 4 */
-  .uncle-4 {
+  .character17 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    width: 25vw;
     height: auto;
-    left: 331vw;
-    bottom: 22vh;
+    left: 270vw;
+    bottom: 20vh;
+  }
+  .whiteChair {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 55vw;
+    height: auto;
+    left: 240vw;
+    bottom: 5vh;
+  }
+
+  /* slide 4 */
+  .slide4-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
   }
   .character13 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 44vw;
+    width: 30vw;
     height: auto;
-    left: 300vw;
-    bottom: -12vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    left: 340vw;
+    bottom: 15vh;
   }
-  .shopUncleChoke {
+  .uncle-shop {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 45vw;
+    width: 1vw;
     height: auto;
-    left: 290vw;
-    bottom: 17vh;
+    left: 328vw;
+    bottom: -100vh;
+  }
+
+  /* slide 5 */
+  .car {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 35vw;
+    height: auto;
+    left: 405vw;
+    bottom: 22vh;
+  }
+  .character24 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 120vw;
+    height: auto;
+    left: 420vw;
+    bottom: -40vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .btnNext {
+    transform-style: preserve-3d;
+    z-index: 6;
+    width: 40vw;
+    height: auto;
+    left: 75%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    cursor: pointer;
+  }
+  .textlast {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: absolute;
+    font-size: 2vh;
+    top: 25%;
+    left: 82.3%;
+  }
+  .start-text-ForUpperone {
+    position: absolute;
+    transform: translate(40%, 80%);
+    font-size: 5vh;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  .btnNext {
+    width: 40vw;
+    height: auto;
+    left: 75%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    cursor: pointer;
   }
 }

@@ -33,6 +33,7 @@ body {
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: auto;
 }
 .floor {
   position:absolute;
@@ -527,10 +528,10 @@ h1 {
   .header {
     position: fixed;
     text-align: center;
-    width: 100vw;
+    width: 150vw;
     left: 50vw;
     transform: translateX(-50%);
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 5%;
     visibility: visible;
     transform-style: preserve-3d;
@@ -538,12 +539,26 @@ h1 {
   }
   .start-text {
     position: absolute;
-    transform: translate(60%, 80%);
+    transform: translate(35%, 65%);
     transform-style: preserve-3d;
     z-index: 1;
   }
-  h1 {
-    font-size: 80px;
+
+
+  .carousel{
+    visibility: hidden;
   }
 
+  .nextslide{
+    right:4vw;
+  }
+  .btnnextslide{
+    width: 4vw;
+  }
+  .previousslide{
+    left: 4vw;
+  }
+  .btnpreviousslide{
+    width: 4vw;
+  }
 }

@@ -471,4 +471,26 @@
     text-align: center;
     top: 18%;
   }
+  .btnNext {
+    width: 40vw;
+    height: auto;
+    left: 75%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    cursor: pointer;
+  }
+  .uncle-5 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 13vw;
+    height: auto;
+    left: 475vw;
+    bottom: 20vh;
+    visibility: hidden;
+  }
+  h1 {
+    font-size: 100px;
+  }
 }

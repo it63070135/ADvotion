@@ -4,8 +4,8 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
-  width: 2vw;
-  height: 3vh;
+  width: 35px;
+  height: 25px;
 }
 
 .dropbtn:hover,
@@ -66,6 +66,11 @@
   transform-origin: top center;
 }
 
+.Homeicon {
+  width: 1.5vw;
+  transform: translateY(25%)
+}
+
 @keyframes rotateX {
   0% {
     opacity: 0;
@@ -90,4 +95,30 @@ hr {
   padding-right: 10px;
   margin-top: 1vh;
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .dropbtn {
+    color: white;
+    padding: 50px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 60px;
+  }
+
+  #myDropdown {
+    width: 100vw;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+
+  .dropdown-content a {
+    font-size: 35px;
+  }
+
+  .Homeicon {
+    width: 80px;
+  }
 }

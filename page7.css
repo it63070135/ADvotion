@@ -308,92 +308,199 @@ h1 {
     display: inline-block;
     font-size: 2.5vh;
   }
+  /* slide 1 */
+  .uncle {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 35vw;
+    bottom: 22vh;
+  }
+  .dog {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 8vw;
+    height: auto;
+    min-width: 160px;
+    left: 38vw;
+    bottom: 20vh;
+    visibility: hidden;
+    /*transform: translate(-50%, -50%);*/
+  }
 
   /* slide 2 */
+  .uncle_shop {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 125vw;
+    bottom: 23vh;
+  }
+  .black_table {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 150vw;
+    bottom: 8vh;
+  }
+
+  /* slide 3 */
+  .uncle_shop_2 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 90vw;
+    height: auto;
+    left: 208vw;
+    bottom: 23vh;
+  }
+  .pole {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 20vw;
+    height: auto;
+    left: 247vw;
+    bottom: 25vh;
+  }
+  .car {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 80vw;
+    height: auto;
+    left: 212vw;
+    bottom: -7vh;
+  }
+
+  /* slide 4 */
+  .uncle-4 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 20vw;
+    height: auto;
+    left: 343vw;
+    bottom: 22vh;
+  }
+  .uncle_shop_3 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 70vw;
+    height: auto;
+    left: 317vw;
+    bottom: 23vh;
+  }
+  .rocket {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 315vw;
+    bottom: 50vh;
+    rotate: -20deg;
+  }
+  .character4 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 15vw;
+    height: auto;
+    left: 370vw;
+    bottom: -10vh;
+    visibility: hidden;
+  }
+  .character6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 11vw;
+    height: auto;
+    left: 323vw;
+    bottom: 0vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    visibility: hidden;
+  }
+  .start-text-ForUpperone {
+    position: absolute;
+    transform: translate(40%, 80%);
+    font-size: 5vh;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  .btnNext {
+    width: 40vw;
+    height: auto;
+    left: 75%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    cursor: pointer;
+  }
+  .slide1-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: left;
+    top: 40%;
+    left: 30vw;
+  }
   .slide2-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 30%;
+  }
+  .slide3-text {
     font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
     top: 18%;
   }
-  .sign {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 50vw;
-    height: auto;
-    left: 120vw;
-    bottom: 22vh;
-  }
-  .character16 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 110vw;
-    bottom: 13vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-
-  /* slide 3 */
-  .slide3-text {
+  .slide4-text {
     font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
-    top: 25%;
+    top: 15%;
   }
-  .uncle {
+  .slide5-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 15%;
+  }
+  .logo_aad {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    width: 25vw;
     height: auto;
-    left: 211vw;
-    bottom: 22vh;
+    left: 438vw;
+    bottom: 50vh;
   }
-  .aunt {
+  .logo_it {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    width: 45vw;
     height: auto;
-    left: 252vw;
-    bottom: 22vh;
+    left: 425vw;
+    bottom: 42vh;
   }
-  .character29 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 42vw;
-    height: auto;
-    left: 263vw;
-    bottom: 7vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  /* slide 4 */
-  .uncle-4 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 40vw;
-    height: auto;
-    left: 331vw;
-    bottom: 22vh;
-  }
-  .character13 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 44vw;
-    height: auto;
-    left: 300vw;
-    bottom: -12vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
+
 }

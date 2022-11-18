@@ -50,6 +50,9 @@
   top: 18%;
 }
 .slide4-text {
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
   font-size: 3vh;
@@ -83,8 +86,8 @@
 
 .start-text-ForUpperone {
   position: absolute;
-  transform: translate(80%, 35%);
-  font-size: 5vh;
+  transform: translate(100%, 100%);
+  font-size: 8vh;
 }
 .section-text {
   color: #ec5a38;
@@ -173,20 +176,22 @@ h1 {
 .orangetree {
   transform-style: preserve-3d;
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   width: 11vw;
   height: auto;
   left: 360vw;
   bottom: 20vh;
 }
-.uncle-4 {
+.divuncle-4{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 13vw;
-  height: auto;
   left: 335vw;
   bottom: 20vh;
+}
+.uncle-4 {
+  width: 13vw;
+  height: auto;
 }
 .character34 {
   transform-style: preserve-3d;
@@ -306,15 +311,14 @@ h1 {
   left: 239.5vw;
   top: 32vh;
 }
-
 .textpress1 {
   position: absolute;
   z-index: 20;
-  height: 6em;
+  height: auto;
   width: auto;
   transform: translateX(-50%) translateY(-120%);
-  left: 243.8vw;
-  top: 51vh;
+  left: 51%;
+  top: 0%;
   animation: buttonpress1up_down 1s infinite;
 }
 .buttonpress1 {
@@ -399,7 +403,7 @@ h1 {
     z-index: 5;
     width: 40vw;
     height: auto;
-    left: 211vw;
+    left: 208vw;
     bottom: 22vh;
   }
   .aunt {
@@ -501,11 +505,58 @@ h1 {
   }
 
   /* slide 5 */
-  .slide5-text {
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    position: relative;
-    font-size: 2vh;
-    text-align: center;
-    top: 25%;
+  .start-text-ForUpperone {
+    position: absolute;
+    transform: translate(50%, 200%);
+    font-size: 5vh;
   }
+  .textlast {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: absolute;
+    font-size: 2vh;
+    top: 25%;
+    left: 82%;
+  }
+  .btnNext {
+    width: 40vw;
+    height: auto;
+    left: 75%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    cursor: pointer;
+  }
+  .newspaper {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 5vw;
+    height: auto;
+    left: 480vw;
+    bottom: 15vh;
+    transform: rotate(-13deg);
+    visibility: hidden;
+  }
+  .character38 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 40vw;
+    height: auto;
+    left: 405vw;
+    bottom: -9vh;
+    visibility: hidden;
+  }
+  .character10 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 13vw;
+    height: auto;
+    left: 450vw;
+    bottom: 15vh;
+    transform: scaleX(-1);
+    visibility: hidden;
+  }
+
 }

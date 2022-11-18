@@ -157,17 +157,41 @@
   left: 260vw;
   bottom: 0vh;
 }
-
-.character4 {
+.divcharacter4{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 35vw;
-  height: auto;
   left: 130vw;
   bottom: -40vh;
 }
+.character4 {
+  width: 35vw;
+  height: auto;
+}
+.divBoard{
+  transform-style: preserve-3d;
+  position: absolute;
+  z-index: 5;
+  top: 0%;
+  left: 100%;
+  opacity: 0.7;
+  transform: translateY(-50%) translateX(-50%);
+}
 .Board {
+  width: 30vw;
+  height: auto;
+}
+.divpopup1 {
+  position: absolute;
+  /*background-color:red;*/
+  width: 40%;
+  height: 30%;
+  top: 32%;
+  left: 38%;
+  transform: translateX(-50%);
+  /*opacity: 0.5;*/
+}
+/*.Board {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -176,7 +200,7 @@
   top: 13%;
   left: 146vw;
   opacity: 0.7;
-}
+}*/
 
 .character5 {
   transform-style: preserve-3d;
@@ -398,6 +422,38 @@ h1 {
   cursor: pointer;
 }
 
+.textpress {
+  position: absolute;
+  z-index: 200;
+  height: auto;
+  width: auto;
+  transform: translateX(30%) translateY(-50%) rotate(90deg);
+  left: 100%;
+  top: 35%;
+  animation: buttonpressleft-right 1s infinite;
+}
+.buttonpress {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+@keyframes buttonpressleft-right {
+  0% {
+    transform:translateX(30%) translateY(-50%) rotate(90deg);
+  }
+  50% {
+    transform:translateX(15%) translateY(-50%) rotate(90deg);
+  }
+  100% {
+    transform:translateX(30%) translateY(-50%) rotate(90deg);
+  }
+}
+
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {
@@ -406,33 +462,78 @@ h1 {
     font-size: 2.5vh;
   }
 
+  /* slide 1 */
+  .character6 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 5vw;
+    bottom: 20vh;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
   /* slide 2 */
   .slide2-text {
     font-family: "IBM Plex Sans Thai", sans-serif;
     position: relative;
     font-size: 2vh;
     text-align: center;
-    top: 18%;
+    top: 30%;
+    left: 0%
   }
-  .sign {
+  .character2 {
     transform-style: preserve-3d;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     width: 50vw;
     height: auto;
-    left: 120vw;
-    bottom: 22vh;
+    left: 100vw;
+    bottom: 23vh;
   }
-  .character16 {
+  .character4 {
+    width: 100vw;
+    height: auto;
+    left: 105vw;
+    bottom: 30vh;
+  }
+  .divcharacter4{
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    left: 100vw;
+    bottom: -30vh;
+  }
+  .rocket {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 0;
+    width: 30vw;
     height: auto;
-    left: 110vw;
-    bottom: 13vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    left: 135vw;
+    bottom: 75vh;
+  }
+  .divBoard {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    top:17%;
+    left: 80%;
+    opacity: 0.7;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .Board {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    top:17%;
+    left: 80%;
+    opacity: 0.7;
+    width: 75vw;
+    height: auto;
+    transform: translateY(-50%) translateX(-50%);
   }
 
   /* slide 3 */
@@ -443,54 +544,189 @@ h1 {
     text-align: center;
     top: 25%;
   }
-  .uncle {
+  .character3 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 220vw;
+    bottom: 15vh;
+    }
+  .character5 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 250vw;
+    bottom: 15vh;
+    }
+    .uncle_shop {
+      transform-style: preserve-3d;
+      position: absolute;
+      z-index: 3;
+      width: 80vw;
+      height: auto;
+      left: 210vw;
+      bottom: 20vh;
+    }
+    .uncle {
+      transform-style: preserve-3d;
+      position: absolute;
+      z-index: 4;
+      width: 18vw;
+      height: auto;
+      left: 242vw;
+      bottom: 22vh;
+    }
+    .light{
+      width: 45vw;
+      height: auto;
+      left: 229vw;
+      bottom: 21vh;
+      opacity: 0.8;
+    }
+
+  /* slide 4 */
+  .slide4-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
+  }
+  .character5-4 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 100vw;
+    height: auto;
+    left: 325vw;
+    bottom: -15vh;
+  }
+  .character1 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 305vw;
+    bottom: 15vh;
+  }
+  .DoubleBoard {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 50vw;
+    height: auto;
+    left: 325vw;
+    bottom: 15vh;
+    opacity: 0.6;
+  }
+  /* slide 5 */
+  .slide5-text {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: relative;
+    font-size: 2vh;
+    text-align: center;
+    top: 25%;
+  }
+  .uncle_shop-5 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 80vw;
+    height: auto;
+    left: 412vw;
+    bottom: 20vh;
+  }
+  .uncle-5 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 18vw;
+    height: auto;
+    left: 444vw;
+    bottom: 22vh;
+  }
+  .start-text-ForUpperone {
+    position: absolute;
+    transform: translate(40%, 80%);
+    font-size: 5vh;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  .btnNext {
     width: 40vw;
     height: auto;
-    left: 211vw;
-    bottom: 22vh;
+    left: 75%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    cursor: pointer;
   }
   .aunt {
     transform-style: preserve-3d;
     position: absolute;
-    z-index: 5;
-    width: 40vw;
+    z-index: 4;
+    width: 10vw;
     height: auto;
-    left: 252vw;
-    bottom: 22vh;
+    left: 420vw;
+    bottom: 15vh;
+    visibility: hidden;
   }
   .character29 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 42vw;
+    width: 10vw;
     height: auto;
-    left: 263vw;
-    bottom: 7vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    left: 413vw;
+    bottom: 6vh;
+    visibility: hidden;
   }
-  /* slide 4 */
-  .uncle-4 {
+  .uncle-paper {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    width: 9vw;
     height: auto;
-    left: 331vw;
-    bottom: 22vh;
+    left: 465vw;
+    bottom: 13vh;
+    visibility: hidden;
   }
-  .character13 {
+  .black_table {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 44vw;
+    width: 15vw;
     height: auto;
-    left: 300vw;
-    bottom: -12vh;
+    left: 457vw;
+    bottom: 3vh;
+    visibility: hidden;
+  }
+  .billboard {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 15vw;
+    height: auto;
+    left: 470vw;
+    bottom: 24vh;
+    visibility: hidden;
+  }
+  .vintagetv {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 4;
+    width: 7vw;
+    height: auto;
+    left: 410vw;
+    bottom: 20vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    visibility: hidden;
   }
 }

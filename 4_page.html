@@ -53,7 +53,6 @@
                 </h1>
               </div>
               <img
-                @click="showPopup(7, 1)"
                 class="character18"
                 src="pic/character/Character (18).png"
               />
@@ -76,12 +75,12 @@
             </div>
 
             <div class="slide two">
-              <img
-                @click="showPopup(4, 3)"
-                class="shopTv"
-                src="pic/fourth_page/ร้านทีวี.png"
-              />
-              <div @click="showPopup(4, 3)" class="divpopup">
+              <div class="divshopTv">
+                <img
+                  @click="showPopup(4, 3)"
+                  class="shopTv"
+                  src="pic/fourth_page/ร้านทีวี.png"
+                />
                 <div class="textpress">
                   <img
                     class="buttonpress"
@@ -89,12 +88,12 @@
                   />
                 </div>
               </div>
-              <img
-                @click="showPopup(4, 4)"
-                class="shopNews"
-                src="pic/fourth_page/ร้านหนังสือพิมพ์.png"
-              />
-              <div @click="showPopup(4, 4)" class="divpopup">
+              <div class="divshopNews">
+                <img
+                  @click="showPopup(4, 4)"
+                  class="shopNews"
+                  src="pic/fourth_page/ร้านหนังสือพิมพ์.png"
+                />
                 <div class="textpress1">
                   <img
                     class="buttonpress1"
@@ -111,10 +110,28 @@
             </div>
 
             <div class="slide three">
-              <img
-                class="shopUncleChoke"
-                src="pic/fourth_page/ร้านลุงโชค(ยุคทีวี).png"
-              />
+              <div class="divshopUncleChoke">
+                <img
+                  class="shopUncleChoke"
+                  src="pic/fourth_page/ร้านลุงโชค(ยุคทีวี).png"
+                />
+                <div @click="showPopup(4, 1)" class="divpopup1">
+                  <div class="textpress2">
+                    <img
+                      class="buttonpress2"
+                      src="pic/button/clickHereButton (4).png"
+                    />
+                  </div>
+                </div>
+                <div @click="showPopup(4, 2)" class="divpopup2">
+                  <div class="textpress3">
+                    <img
+                      class="buttonpress3"
+                      src="pic/button/clickHereButton (4).png"
+                    />
+                  </div>
+                </div>
+              </div>
               <img class="whiteChair" src="pic/fourth_page/เก้าอี้ขาว.png" />
               <img class="character29" src="pic/character/Character (29).png" />
               <img class="character17" src="pic/character/Character (17).png" />
@@ -177,11 +194,9 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           ><img
-            style="width: 1.5vw; transform: translateY(25%)"
-            src="pic/first_page/home-icon.svg"
+          class="Homeicon" src="pic/first_page/home-icon.svg"
           />&nbsp;Home page</a
         >
         <div class="fakeHR"></div>
@@ -190,7 +205,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >ต้นกำเนิดของโฆษณา</a
         >
@@ -200,7 +214,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาบนกระดาษ</a
         >
@@ -210,7 +223,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >ขายจริงผ่านจอ</a
         >
@@ -220,7 +232,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาสู่ออนไลน์</a
         >
@@ -230,7 +241,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >เฉิดฉายสู่โลกอนาคต</a
         >
@@ -240,7 +250,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาเป็นอมตะ</a
         >

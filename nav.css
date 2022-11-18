@@ -4,8 +4,8 @@
   font-size: 16px;
   border: none;
   cursor: pointer;
-  width: 2vw;
-  height: 3vh;
+  width: 35px;
+  height: 25px;
 }
 
 .dropbtn:hover,
@@ -31,9 +31,6 @@
   right: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-
-
-
 }
 
 .dropdown-content a {
@@ -42,13 +39,13 @@
   text-decoration: none;
   display: block;
   background-color: #2980B9;
-  font-size: 1.6vh;
+  font-size: 18px;
   padding: 8%;
   padding-left: 20%;
-  
+
 }
 
-.fakeHR{
+.fakeHR {
   position: absolute;
   width: 60%;
   left: 20%;
@@ -71,6 +68,11 @@
   transform-origin: top center;
 }
 
+.Homeicon {
+  width: 1.5vw;
+  transform: translateY(25%)
+}
+
 
 @keyframes rotateX {
   0% {
@@ -89,11 +91,37 @@
 }
 
 hr {
-  position:relative;
+  position: relative;
   border-color: white;
   border-radius: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 1vh;
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .dropbtn {
+    color: white;
+    padding: 50px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 60px;
+  }
+
+  #myDropdown {
+    width: 100vw;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+
+  .dropdown-content a {
+    font-size: 35px;
+  }
+
+  .Homeicon {
+    width: 80px;
+  }
 }

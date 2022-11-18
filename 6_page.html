@@ -52,7 +52,7 @@
                   <div class="section-text">โลกอนาคต</div>
                 </h1>
               </div>
-              <img @click="showPopup(7, 1)" class="character6" src="pic/character/Character (6).png" />
+              <img class="character6" src="pic/character/Character (6).png" />
               <img class="cloud01" src="pic/cloud/อนาคต-01.png" />
               <img class="cloud02" src="pic/cloud/อนาคต-02.png" />
               <img class="cloud03" src="pic/cloud/อนาคต-03.png" />
@@ -71,15 +71,28 @@
             </div>
 
             <div class="slide two">
-              <img @click="showPopup(6, 1)" class="character4" src="pic/character/Character (4).png" />
-              <video @click="showPopup(6, 1)"
-                class="Board"
-                src="pic/webm/กระดานเรืองแสง+โฆษณาลุง.webm"
-                autoplay
-                loop
-              ></video>
+              <div class="divcharacter4">
+                <img @click="showPopup(6, 1)" class="character4" src="pic/character/Character (4).png" />
+                <div class="divBoard">
+                  <video
+                    class="Board"
+                    src="pic/webm/กระดานเรืองแสง+โฆษณาลุง.webm"
+                    autoplay
+                    loop
+                  >
+                  </video>
+                  <div @click="showPopup(6, 1)" class="divpopup1">
+                    <div class="textpress">
+                      <img
+                        class="buttonpress"
+                        src="pic/button/clickHereButton (6).png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img class="character2" src="pic/character/Character (2).png" />
-              <img class="rocket" src="pic/sixth_page/จรวด.png" />
+              <video class="rocket" src="pic/webm/rocket.webm" autoplay loop></video>
               <div class="slide2-text">
                 แนวโน้วของโฆษณาในโลกอนาคต<br />อาจมีการโชว์สินค้าด้วย<br />
                 <div class="text-highlight">แว่น VR</div>
@@ -164,11 +177,9 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           ><img
-            style="width: 1.5vw; transform: translateY(25%)"
-            src="pic/first_page/home-icon.svg"
+          class="Homeicon" src="pic/first_page/home-icon.svg"
           />&nbsp;Home page</a
         >
         <div class="fakeHR"></div>
@@ -177,7 +188,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >ต้นกำเนิดของโฆษณา</a
         >
@@ -187,7 +197,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาบนกระดาษ</a
         >
@@ -197,7 +206,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >ขายจริงผ่านจอ</a
         >
@@ -207,7 +215,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาสู่ออนไลน์</a
         >
@@ -217,7 +224,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >เฉิดฉายสู่โลกอนาคต</a
         >
@@ -227,7 +233,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาเป็นอมตะ</a
         >

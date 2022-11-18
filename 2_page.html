@@ -49,10 +49,8 @@
             <div class="slide one">
               <img class="floor" src="pic/second_page/floor.png" />
               <div class="start-text-ForUpperone">
-                <h1>
                   ต้นกำเนิด<br />
                   <div class="section-text">ของโฆษณา</div>
-                </h1>
               </div>
               <img class="dog" src="pic/first_page/dog.png" />
               <img class="cloud01" src="pic/cloud/ป่าวประกาศ01.png" />
@@ -94,21 +92,17 @@
                 ลุงโชคจึงหาวิธีเรียกลูกค้ามาซื้อของมากขึ้น<br />โดยใช้วิธีการตะโกนขายสินค้าของตัวเองให้ลูกค้าได้ยิน
               </div>
               <img class="floor" src="pic/second_page/floor.png" />
-              <img
-                @click="showPopup(2, 1)"
-                class="uncle"
-                src="pic/first_page/uncle.png"
-              />
+              <img class="uncle"src="pic/first_page/uncle.png"/>
               <img class="aunt" src="pic/first_page/aunt.png" />
               <img class="character36" src="pic/character/Character (36).png" />
-              <div @click="showPopup(2, 1)" class="divpopup1">
+              <!--<div @click="showPopup(2, 1)" class="divpopup1">
                 <div class="textpress1">
                   <img
                     class="buttonpress1"
                     src="pic/button/clickHereButton (2).png"
                   />
                 </div>
-              </div>
+              </div>--->
             </div>
 
             <div class="slide four">
@@ -119,11 +113,19 @@
               </div>
               <img class="floor floorFlip" src="pic/second_page/floor.png" />
               <img class="orangetree" src="pic/second_page/orangetree.png" />
-              <img
-                @click="showPopup(2, 1)"
-                class="uncle-4"
-                src="pic/first_page/uncle.png"
-              />
+              <div class="divuncle-4">
+                <img
+                  @click="showPopup(2, 1)"
+                  class="uncle-4"
+                  src="pic/first_page/uncle.png"
+                />
+                <div class="textpress1">
+                  <img
+                    class="buttonpress1"
+                    src="pic/button/clickHereButton (2).png"
+                  />
+                </div>
+              </div>
               <img class="character34" src="pic/second_page/aunt_angry.png" />
               <img
                 class="character33_4"
@@ -178,11 +180,9 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           ><img
-            style="width: 1.5vw; transform: translateY(25%)"
-            src="pic/first_page/home-icon.svg"
+          class="Homeicon" src="pic/first_page/home-icon.svg"
           />&nbsp;Home page</a
         >
         <div class="fakeHR"></div>
@@ -191,7 +191,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >ต้นกำเนิดของโฆษณา</a
         >
@@ -201,7 +200,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาบนกระดาษ</a
         >
@@ -211,7 +209,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >ขายจริงผ่านจอ</a
         >
@@ -221,7 +218,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาสู่ออนไลน์</a
         >
@@ -231,7 +227,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >เฉิดฉายสู่โลกอนาคต</a
         >
@@ -241,7 +236,6 @@
           style="
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
-            font-size: 18px;
           "
           >โฆษณาเป็นอมตะ</a
         >
