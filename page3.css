@@ -111,7 +111,7 @@
   bottom: 20vh;
 }
 
-.News{
+.News {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -165,23 +165,23 @@
   width: 30vw;
   height: auto;
 }
-.divpopup1{
-  position:absolute;
+.divpopup1 {
+  position: absolute;
   /*background-color:red; */
-  width:55%; 
-  height:30%; 
-  top:32%;
-  left:50%;
+  width: 55%;
+  height: 30%;
+  top: 32%;
+  left: 50%;
   transform: translateX(-50%);
   opacity: 0.5;
 }
-.divpopup2{
-  position:absolute;
+.divpopup2 {
+  position: absolute;
   /*background-color:blue; */
-  width:57%; 
-  height:18%; 
-  top:62%;
-  left:49.5%;
+  width: 57%;
+  height: 18%;
+  top: 62%;
+  left: 49.5%;
   transform: translateX(-50%);
   opacity: 0.5;
 }
@@ -282,6 +282,27 @@ h1 {
   position: relative;
   cursor: pointer;
 }
+.textpress {
+  position: absolute;
+  z-index: 200;
+  height: 6em;
+  width: auto;
+  transform: translateX(-50%) translateY(-150%);
+  left: 52.3vw;
+  top: -15vh;
+  animation: buttonpress2up_down 1s infinite;
+}
+.buttonpress {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+
 .buttonpress1 {
   position: relative;
   z-index: 20;
@@ -299,7 +320,7 @@ h1 {
   width: auto;
   transform: translate(50%, 50%);
   left: 239.5vw;
-  top: 32vh;
+  top: 31vh;
 }
 .buttonpress2 {
   position: relative;
@@ -322,9 +343,15 @@ h1 {
   animation: buttonpress2up_down 1s infinite;
 }
 @keyframes buttonpress2up_down {
-  0%   {transform: translateX(-50%) translateY(-120%);}
-  50%   {transform: translateX(-50%) translateY(-135%);}
-  100% {transform: translateX(-50%) translateY(-120%);}
+  0% {
+    transform: translateX(-50%) translateY(-120%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-135%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-120%);
+  }
 }
 .buttonpress3 {
   position: relative;
@@ -347,9 +374,15 @@ h1 {
   animation: buttonpress3up_down 1s infinite;
 }
 @keyframes buttonpress3up_down {
-  0%   {transform: translateX(-50%) translateY(20%) rotate(180deg);}
-  50%   {transform: translateX(-50%) translateY(35%) rotate(180deg);}
-  100% {transform: translateX(-50%) translateY(20%) rotate(180deg);}
+  0% {
+    transform: translateX(-50%) translateY(20%) rotate(180deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(35%) rotate(180deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(20%) rotate(180deg);
+  }
 }
 /* for phone */
 @media screen and (max-width: 992px) {

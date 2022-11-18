@@ -79,7 +79,8 @@
                 เป็นคนในชุมชน
               </div>
               <img class="floor floorFlip" src="pic/second_page/floor.png" />
-              <img @click="showPopup(2, 1)"
+              <img
+                @click="showPopup(2, 1)"
                 class="character29-1"
                 src="pic/character/Character (29).png"
               />
@@ -93,15 +94,20 @@
                 ลุงโชคจึงหาวิธีเรียกลูกค้ามาซื้อของมากขึ้น<br />โดยใช้วิธีการตะโกนขายสินค้าของตัวเองให้ลูกค้าได้ยิน
               </div>
               <img class="floor" src="pic/second_page/floor.png" />
-              <img @click="showPopup(2, 1)" class="uncle" src="pic/first_page/uncle.png" />
+              <img
+                @click="showPopup(2, 1)"
+                class="uncle"
+                src="pic/first_page/uncle.png"
+              />
               <img class="aunt" src="pic/first_page/aunt.png" />
               <img class="character36" src="pic/character/Character (36).png" />
-              <div class="textpress">
-                ลองกดดูสิ<br />
-                <img
-                  class="buttonpress"
-                  src="https://cdn.discordapp.com/attachments/1030682352139124757/1033005362279874600/unknown.png"
-                />
+              <div @click="showPopup(2, 1)" class="divpopup1">
+                <div class="textpress1">
+                  <img
+                    class="buttonpress1"
+                    src="pic/button/clickHereButton (2).png"
+                  />
+                </div>
               </div>
             </div>
 
@@ -323,18 +329,20 @@
     </div>
     <div id="popup" class="popup" v-if="showingPopup">
       <div @click="closePopup()" class="popupBG"></div>
-  
+
       <div class="popupCard">
-        <img :src="showingIMG" class="popupImg" /><br>
+        <img :src="showingIMG" class="popupImg" /><br />
         <div class="popupHeader">
-          <span>
-            {{showingHeader}}</span>
-        </div><br>
-        <span class="popupContent">
-          {{showingContent}}</span>
-        <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png" />
+          <span> {{showingHeader}}</span>
+        </div>
+        <br />
+        <span class="popupContent"> {{showingContent}}</span>
+        <img
+          class="popupExit"
+          @click="closePopup()"
+          src="pic/button/exitBtn.png"
+        />
       </div>
-  
     </div>
   </body>
   <script src="script.js"></script>

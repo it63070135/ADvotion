@@ -249,6 +249,60 @@ h1 {
   bottom: 20vh;
 }
 
+.textpress {
+  position: absolute;
+  z-index: 200;
+  height: 6em;
+  width: auto;
+  transform: translateX(-50%) translateY(-150%);
+  left: 138vw;
+  top: 45vh;
+  animation: buttonpress2up_down 1s infinite;
+}
+.buttonpress {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+
+.textpress1 {
+  position: absolute;
+  z-index: 200;
+  height: 6em;
+  width: auto;
+  transform: translateX(-50%) translateY(-150%);
+  left: 168vw;
+  top: 45vh;
+  animation: buttonpress2up_down 1s infinite;
+}
+.buttonpress1 {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+
+@keyframes buttonpress2up_down {
+  0% {
+    transform: translateX(-50%) translateY(-120%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-135%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-120%);
+  }
+}
+
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {

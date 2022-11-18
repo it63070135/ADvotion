@@ -52,7 +52,11 @@
                   <div class="section-text">โลกออนไลน์</div>
                 </h1>
               </div>
-              <img @click="showPopup(7, 1)" class="character22" src="pic/character/Character (22).png" />
+              <img
+                @click="showPopup(7, 1)"
+                class="character22"
+                src="pic/character/Character (22).png"
+              />
               <img class="character24" src="pic/character/Character (24).png" />
               <img class="bts" src="pic/fifth_page/รถไฟฟ้า.png" />
               <img class="cloud01" src="pic/cloud/ออนไลน์-01.png" />
@@ -73,7 +77,19 @@
             </div>
 
             <div class="slide two">
-              <img @click="showPopup(5, 2)" class="tvdigitalshop-2" src="pic/fifth_page/ร้านศัพ.png" />
+              <img
+                @click="showPopup(5, 2)"
+                class="tvdigitalshop-2"
+                src="pic/fifth_page/ร้านศัพ.png"
+              />
+              <div @click="showPopup(5, 2)" class="divpopup">
+                <div class="textpress">
+                  <img
+                    class="buttonpress"
+                    src="pic/button/clickHereButton (5).png"
+                  />
+                </div>
+              </div>
               <img class="blacktable" src="pic/fifth_page/โต๊ะดำ2.png" />
               <img class="character27" src="pic/character/Character (27).png" />
               <img class="character23" src="pic/character/Character (23).png" />
@@ -306,18 +322,20 @@
     </div>
     <div id="popup" class="popup" v-if="showingPopup">
       <div @click="closePopup()" class="popupBG"></div>
-  
+
       <div class="popupCard">
-        <img :src="showingIMG" class="popupImg" /><br>
+        <img :src="showingIMG" class="popupImg" /><br />
         <div class="popupHeader">
-          <span>
-            {{showingHeader}}</span>
-        </div><br>
-        <span class="popupContent">
-          {{showingContent}}</span>
-        <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png" />
+          <span> {{showingHeader}}</span>
+        </div>
+        <br />
+        <span class="popupContent"> {{showingContent}}</span>
+        <img
+          class="popupExit"
+          @click="closePopup()"
+          src="pic/button/exitBtn.png"
+        />
       </div>
-  
     </div>
   </body>
   <script src="script.js"></script>

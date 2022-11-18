@@ -307,6 +307,39 @@ h1 {
   top: 32vh;
 }
 
+.textpress1 {
+  position: absolute;
+  z-index: 20;
+  height: 6em;
+  width: auto;
+  transform: translateX(-50%) translateY(-120%);
+  left: 243.8vw;
+  top: 51vh;
+  animation: buttonpress1up_down 1s infinite;
+}
+.buttonpress1 {
+  position: relative;
+  z-index: 20;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 62%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+
+@keyframes buttonpress1up_down {
+  0% {
+    transform: translateX(-50%) translateY(-120%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-135%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-120%);
+  }
+}
+
 /* for phone */
 @media screen and (max-width: 992px) {
   .dog {
