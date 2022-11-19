@@ -53,14 +53,6 @@ body {
   height: 82vh;
   scroll-snap-align: center;
 }
-.one {
-}
-.two {
-}
-.three {
-}
-.four {
-}
 
 ::-webkit-scrollbar {
   display: none;
@@ -179,7 +171,7 @@ h1 {
   z-index: 423;
   left: 50%;
   transform:translateX(-50%) translateY(-50%);
-  animation: bounceIn 0.5s;
+  animation: bounceInImg 1s;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
 }
 
@@ -197,13 +189,14 @@ h1 {
   font-family: IBM Plex Sans Thai, sans-serif;
 }
 .popupCard{
+  background-image:linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("pic/first_page/popupBG.JPG");
+  background-size: 100%;
   display:block;
   transform-style: preserve-3d;
   z-index: 422;
   position: absolute;
   width: 20vw;
   height: 70vh;
-  background-color: rgb(224, 221, 221);
   left: 50%;
   top:58%;
   transform: translateX(-50%) translateY(-50%);
@@ -250,6 +243,29 @@ h1 {
   100%{
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1) translate3d(0,0,0);
+  }
+}
+
+@keyframes bounceInImg{
+  0%{
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.3) translate3d(0,0,0) rotate(0deg);
+  }
+  /*50%{
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(-50%) scale(1.1)rotate(180deg);
+  }*/
+  /*80%{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(0.89) rotate(270deg);
+  }*/
+  80%{
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(-50%) scale(1) translate3d(0,0,0) rotate(360deg);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1) translate3d(0,0,0) rotate(--my);
   }
 }
 
@@ -560,5 +576,68 @@ h1 {
   }
   .btnpreviousslide{
     width: 4vw;
+  }
+  .popupCard{
+    display:block;
+    transform-style: preserve-3d;
+    z-index: 422;
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    background-color: rgb(224, 221, 221);
+    left: 50%;
+    top:58%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: bounceIn 0.5s;
+    justify-content: center;
+    padding-left: 3.5em;
+    padding-right: 3em;
+    border-radius: 10%;
+  }
+  .popupContent{
+    position: relative;
+    top: -15%;
+    font-family: IBM Plex Sans Thai, sans-serif;
+    font-size: 45px;
+  }
+  .popupHeader{
+    position: relative;
+    top: -20%;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0%;
+  }
+  .popupExit{
+    cursor: pointer;
+    position: absolute;
+    width:15vw;
+    left:50%;
+    top:60vh;
+    transform: translateX(-50%);
+  }
+  .footer{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display:flex;
+    bottom: 0%;
+    left:0%;
+    position: fixed;
+    width: 60vw;
+    height: auto;
+    background-color: white;
+    border-top-right-radius: 25px;
+    opacity: 0.8;
+    justify-content: center;
+  }
+  .nited{
+    position: relative;
+    width: 25vw;
+    height: auto;
+    margin-right: 20px;
+  }
+  .it{
+    position: relative;
+    width: 30vw;
+    height:auto;
   }
 }

@@ -127,15 +127,16 @@
   left: 140.5vw;
   bottom: 20vh;
 }
-
-.character1 {
+.divcharacter1 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 13vw;
-  height: auto;
   left: 325vw;
   bottom: 15vh;
+}
+.character1 {
+  width: 13vw;
+  height: auto;
 }
 
 .character2 {
@@ -172,8 +173,8 @@
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  top: 0%;
-  left: 100%;
+  top: 20%;
+  left: 90%;
   opacity: 0.7;
   transform: translateY(-50%) translateX(-50%);
 }
@@ -453,6 +454,37 @@ h1 {
     transform:translateX(30%) translateY(-50%) rotate(90deg);
   }
 }
+.textpress1 {
+  position: absolute;
+  z-index: 200;
+  height: auto;
+  width: auto;
+  transform: translateX(-50%) translateY(-135%);
+  left: 50%;
+  top: 00%;
+  animation: buttonpress1up-down 1s infinite;
+}
+.buttonpress1 {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+@keyframes buttonpress1up-down {
+  0% {
+    transform:translateX(-50%) translateY(-135%);
+  }
+  50% {
+    transform:translateX(-50%) translateY(-120%);
+  }
+  100% {
+    transform:translateX(-50%) translateY(-135%);
+  }
+}
 
 /* for phone */
 @media screen and (max-width: 992px) {
@@ -516,24 +548,20 @@ h1 {
     bottom: 75vh;
   }
   .divBoard {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
     top:17%;
     left: 80%;
     opacity: 0.7;
-    transform: translateY(-50%) translateX(-50%);
   }
   .Board {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
     top:17%;
     left: 80%;
     opacity: 0.7;
     width: 75vw;
     height: auto;
-    transform: translateY(-50%) translateX(-50%);
+  }
+  .buttonpress {
+    width: 60px;
+    left: 50%;
   }
 
   /* slide 3 */
@@ -605,14 +633,20 @@ h1 {
     left: 325vw;
     bottom: -15vh;
   }
+  .divcharacter1 {
+    left: 305vw;
+    bottom: 15vh;
+  }
   .character1 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
     width: 30vw;
     height: auto;
     left: 305vw;
     bottom: 15vh;
+  }
+  .buttonpress1 {
+    height: auto;
+    width: 60px;
+    left: 50%;
   }
   .DoubleBoard {
     transform-style: preserve-3d;

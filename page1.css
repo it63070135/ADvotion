@@ -471,6 +471,13 @@
     text-align: center;
     top: 18%;
   }
+  .textlast {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: absolute;
+    font-size: 2vh;
+    top: 20%;
+    left: 82%;
+  }
   .btnNext {
     width: 40vw;
     height: auto;

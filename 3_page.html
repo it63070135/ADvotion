@@ -102,14 +102,21 @@
                 <div class="text-highlight">โฆษณาผ่านกระดาษ</div>
               </div>
               <img class="floor" src="pic/third_page/floor.png" />
-              <img class="Board" src="pic/third_page/Board.png" />
-              <video
-                @click="showPopup(3, 1)"
-                class="Board"
-                src="pic/webm/Board.webm"
-                autoplay
-                loop
-              ></video>
+              <div class="divBoard">
+                <video
+                  @click="showPopup(3, 1)"
+                  class="Board"
+                  src="pic/webm/Board.webm"
+                  autoplay loop preload="true"
+                ></video>
+                <div class="textpress1">
+                  <img
+                    class="buttonpress1"
+                    src="pic/button/clickHereButton (3).png"
+                  />
+                </div>
+              </div>
+
               <img class="character29" src="pic/character/Character (29).png" />
               <img class="character33" src="pic/character/Character (33).png" />
               <!-- รอ webm อันใหม่<div class="textpress1">
@@ -353,7 +360,7 @@
       <div @click="closePopup()" class="popupBG"></div>
 
       <div class="popupCard">
-        <img :src="showingIMG" class="popupImg" /><br />
+        <img :src="showingIMG" class="popupImg" :style="showingRotate" /><br />
         <div class="popupHeader">
           <span> {{showingHeader}}</span>
         </div>

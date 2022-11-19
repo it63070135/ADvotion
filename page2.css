@@ -435,14 +435,14 @@ h1 {
     top: 25%;
   }
   .uncle-4 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
     width: 40vw;
     height: auto;
+  }
+  .divuncle-4{
     left: 310vw;
     bottom: 22vh;
   }
+
   .character34 {
     transform-style: preserve-3d;
     position: absolute;
@@ -502,6 +502,17 @@ h1 {
     height: auto;
     left: 430vw;
     bottom: 20vh;
+  }
+
+  .orangetree {
+    width: 35vw;
+    height: auto;
+    left: 365vw;
+    bottom: 23vh;
+  }
+  .buttonpress1 {
+    width: 60px;
+    left: 70%;
   }
 
   /* slide 5 */

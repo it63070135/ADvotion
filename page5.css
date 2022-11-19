@@ -159,17 +159,27 @@
   left: 235vw;
   bottom: -10vh;
 }
-
-.shopUncleChoke {
+.divshopUncleChoke{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 30vw;
-  height: auto;
   left: 225vw;
   bottom: 17vh;
 }
-
+.shopUncleChoke {
+  width: 30vw;
+  height: auto;
+}
+.divpopup1 {
+  position: absolute;
+  /*background-color:red; */
+  width: 13%;
+  height: 23%;
+  top: 55%;
+  left: 10%;
+  transform: translateX(-50%) translateY(-50%);
+  /*opacity: 0.5;*/
+}
 /* slide2 */
 .divtvdigitalshop-2{
   transform-style: preserve-3d;
@@ -182,15 +192,16 @@
   width: 25vw;
   height: auto;
 }
-
-.tvdigitalshop-3 {
+.divtvdigitalshop-3{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 4;
-  width: 25vw;
-  height: auto;
   left: 251vw;
   bottom: 17vh;
+}
+.tvdigitalshop-3 {
+  width: 25vw;
+  height: auto;
 }
 
 .blacktable {
@@ -322,6 +333,37 @@ h1 {
     transform: translateX(-50%) translateY(-120%);
   }
 }
+.textpress1 {
+  position: absolute;
+  z-index: 200;
+  height: auto;
+  width: auto;
+  transform: translateX(-135%) translateY(-50%) rotate(-90deg);
+  left: 0%;
+  top: 50%;
+  animation: buttonpress1left_right 1s infinite;
+}
+.buttonpress1 {
+  position: relative;
+  z-index: 200;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+@keyframes buttonpress1left_right {
+  0% {
+    transform: translateX(-120%) translateY(-50%) rotate(-90deg);
+  }
+  50% {
+    transform: translateX(-135%) translateY(-50%) rotate(-90deg);
+  }
+  100% {
+    transform: translateX(-120%) translateY(-50%) rotate(-90deg);
+  }
+}
 
 /* for phone */
 @media screen and (max-width: 992px) {
@@ -383,15 +425,7 @@ h1 {
     left: 435vw;
     bottom: 20vh;
   }
-  .shopUncleChoke {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 60vw;
-    height: auto;
-    left: 205vw;
-    bottom: 20vh;
-  }
+  
   /* slide 2 */
   .slide2-text {
     font-family: "IBM Plex Sans Thai", sans-serif;
@@ -451,7 +485,7 @@ h1 {
     left: 126vw;
     bottom: 22vh;
   }
-  .tvdigitalshop-3 {
+  /* .tvdigitalshop-3 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 4;
@@ -459,18 +493,14 @@ h1 {
     height: auto;
     left: 255vw;
     bottom: 20vh;
-  }
+  } */
   .tvdigitalshop-2 {
     width: 50vw;
     height: auto;
   }
 
   .buttonpress {
-    position: relative;
-    z-index: 200;
-    height: auto;
     width: 60px;
-    transform: translate(-50%);
     left: 50%;
   }
 
@@ -482,6 +512,32 @@ h1 {
     font-size: 2vh;
     text-align: center;
     top: 25%;
+  }
+
+  .shopUncleChoke {
+    width: 50vw;
+    height: auto;
+    left: 205vw;
+  }
+
+  .divshopUncleChoke{
+    left: 205vw;
+    bottom: 22vh;
+  }
+
+  .tvdigitalshop-3 {
+    width: 45vw;
+    height: auto;
+    left: 251vw;
+  }
+
+  .divtvdigitalshop-3{
+    left: 251vw;
+    bottom: 22vh;
+  }
+  .buttonpress1 {
+    width: 60px;
+    left: 50%;
   }
 
   /* slide 4 */

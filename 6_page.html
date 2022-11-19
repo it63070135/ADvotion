@@ -128,7 +128,16 @@
                 autoplay
                 loop
               ></video>
-              <img @click="showPopup(6, 2)" class="character1" src="pic/character/Character (1).png" />
+              <div class="divcharacter1">
+                <img @click="showPopup(6, 2)" class="character1" src="pic/character/Character (1).png" />
+                <div class="textpress1">
+                  <img
+                    class="buttonpress1"
+                    src="pic/button/clickHereButton (6).png"
+                  />
+                </div>
+              </div>
+
             </div>
 
             <div class="slide five">
@@ -322,7 +331,7 @@
       <div @click="closePopup()" class="popupBG"></div>
   
       <div class="popupCard">
-        <img :src="showingIMG" class="popupImg" /><br>
+        <img :src="showingIMG" class="popupImg" :style="showingRotate"/><br>
         <div class="popupHeader">
           <span>
             {{showingHeader}}</span>

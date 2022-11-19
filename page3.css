@@ -6,6 +6,7 @@
   background-size: 100vw 100vh;
   background-position: left bottom;
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -17,6 +18,7 @@
   background-repeat: repeat-x;
   background-position: left bottom;
 }
+
 .wrapper02 {
   display: flex;
   flex-direction: row;
@@ -26,6 +28,7 @@
   background-repeat: repeat-x;
   background-position: left bottom;
 }
+
 .slide2-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -33,6 +36,7 @@
   text-align: center;
   top: 18%;
 }
+
 .slide3-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -40,6 +44,7 @@
   top: 18%;
   left: 25%;
 }
+
 .slide4-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -47,6 +52,7 @@
   text-align: center;
   top: 18%;
 }
+
 .slide5-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -54,6 +60,7 @@
   text-align: center;
   top: 18%;
 }
+
 .textlast {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: absolute;
@@ -61,6 +68,7 @@
   top: 25%;
   left: 82%;
 }
+
 .character12 {
   transform-style: preserve-3d;
   position: absolute;
@@ -110,13 +118,15 @@
   left: 137vw;
   bottom: 20vh;
 }
-.divNews{
+
+.divNews {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
   left: 154.5vw;
   bottom: 40vh;
 }
+
 .News {
   width: 5vw;
   height: auto;
@@ -142,6 +152,7 @@
   left: 230vw;
   bottom: 20vh;
 }
+
 .character29-2 {
   transform-style: preserve-3d;
   position: absolute;
@@ -153,6 +164,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .divnewspaperShop {
   transform-style: preserve-3d;
   position: absolute;
@@ -162,10 +174,12 @@
   left: 336vw;
   bottom: 20vh;
 }
+
 .newspaperShop {
   width: 30vw;
   height: auto;
 }
+
 .divpopup1 {
   position: absolute;
   /*background-color:red; */
@@ -176,6 +190,7 @@
   transform: translateX(-50%);
   /*opacity: 0.5;*/
 }
+
 .divpopup2 {
   position: absolute;
   /*background-color:blue; */
@@ -186,6 +201,7 @@
   transform: translateX(-50%);
   /*opacity: 0.5;*/
 }
+
 .character33 {
   transform-style: preserve-3d;
   position: absolute;
@@ -197,15 +213,18 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-.Board {
+.divBoard{
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 25vw;
-  height: auto;
-  left: 240vw;
-  bottom: 25vh;
+  left: 230vw;
+  bottom: 20vh;
 }
+.Board {
+  width: 50vw;
+  height: auto;
+}
+
 .vintagetv {
   transform-style: preserve-3d;
   position: absolute;
@@ -217,6 +236,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .character30 {
   transform-style: preserve-3d;
   position: absolute;
@@ -224,14 +244,17 @@
   width: 10vw;
   height: auto;
 }
+
 #character301 {
   left: 458vw;
   bottom: 12vh;
 }
+
 #character302 {
   left: 474vw;
   bottom: 19vh;
 }
+
 .character13 {
   transform-style: preserve-3d;
   position: absolute;
@@ -243,6 +266,7 @@
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .character11 {
   transform-style: preserve-3d;
   position: absolute;
@@ -252,6 +276,7 @@
   left: 315vw;
   bottom: -9vh;
 }
+
 .uncleread {
   transform-style: preserve-3d;
   position: absolute;
@@ -261,17 +286,21 @@
   left: 363vw;
   bottom: 15vh;
 }
+
 .start-text-ForUpperone {
   position: absolute;
   transform: translate(80%, 35%);
   font-size: 5vh;
 }
+
 .section-text {
   color: #4abd68;
 }
+
 h1 {
   font-size: 10vh;
 }
+
 .btnNext {
   transform-style: preserve-3d;
   z-index: 6;
@@ -283,6 +312,7 @@ h1 {
   position: relative;
   cursor: pointer;
 }
+
 .textpress {
   position: absolute;
   z-index: 200;
@@ -293,6 +323,7 @@ h1 {
   top: 50%;
   animation: buttonpress2left-right 1s infinite;
 }
+
 .buttonpress {
   position: relative;
   z-index: 200;
@@ -303,16 +334,40 @@ h1 {
   /*left:242.5vw;
   top: 37vh;*/
 }
+
 @keyframes buttonpress2left-right {
   0% {
-    transform:translateX(30%) translateY(-50%) rotate(90deg);
+    transform: translateX(30%) translateY(-50%) rotate(90deg);
   }
+
   50% {
-    transform:translateX(15%) translateY(-50%) rotate(90deg);
+    transform: translateX(15%) translateY(-50%) rotate(90deg);
   }
+
   100% {
-    transform:translateX(30%) translateY(-50%) rotate(90deg);
+    transform: translateX(30%) translateY(-50%) rotate(90deg);
   }
+}
+.buttonpress1 {
+  position: relative;
+  z-index: 20;
+  height: auto;
+  width: 3vw;
+  transform: translate(-50%);
+  left: 50%;
+  /*left:242.5vw;
+  top: 37vh;*/
+}
+
+.textpress1 {
+  position: absolute;
+  z-index: 20;
+  height: auto;
+  width: auto;
+  transform: translateX(-50%) translateY(-120%);
+  left: 50%;
+  top: 0%;
+  animation: buttonpress2up_down 1s infinite;
 }
 /*ไม่ต้องใช้เป็นต้นฉบับที่ผิดพวกเลข1*/
 /*.buttonpress1 {
@@ -322,7 +377,7 @@ h1 {
   width: 1.5vw;
   transform: translate(-50%) rotate(90deg);
   left: 50%;*/
-  /*left:242.5vw;
+/*left:242.5vw;
   top: 37vh;*/
 /*}*/
 /*.textpress1 {
@@ -344,6 +399,7 @@ h1 {
   /*left:242.5vw;
   top: 37vh;*/
 }
+
 .textpress2 {
   position: absolute;
   z-index: 20;
@@ -354,17 +410,21 @@ h1 {
   top: 0%;
   animation: buttonpress2up_down 1s infinite;
 }
+
 @keyframes buttonpress2up_down {
   0% {
     transform: translateX(-50%) translateY(-120%);
   }
+
   50% {
     transform: translateX(-50%) translateY(-135%);
   }
+
   100% {
     transform: translateX(-50%) translateY(-120%);
   }
 }
+
 .buttonpress3 {
   position: relative;
   z-index: 200;
@@ -375,6 +435,7 @@ h1 {
   /*left:242.5vw;
   top: 37vh;*/
 }
+
 .textpress3 {
   position: absolute;
   z-index: 200;
@@ -385,17 +446,21 @@ h1 {
   top: 100%;
   animation: buttonpress3up_down 1s infinite;
 }
+
 @keyframes buttonpress3up_down {
   0% {
     transform: translateX(-50%) translateY(20%) rotate(180deg);
   }
+
   50% {
     transform: translateX(-50%) translateY(35%) rotate(180deg);
   }
+
   100% {
     transform: translateX(-50%) translateY(20%) rotate(180deg);
   }
 }
+
 /* for phone */
 @media screen and (max-width: 992px) {
   .text-highlight {
@@ -403,6 +468,7 @@ h1 {
     display: inline-block;
     font-size: 2.5vh;
   }
+
   /* slide 1 */
   .character12 {
     transform-style: preserve-3d;
@@ -423,6 +489,7 @@ h1 {
     text-align: center;
     top: 18%;
   }
+
   .shop {
     transform-style: preserve-3d;
     position: absolute;
@@ -433,6 +500,22 @@ h1 {
     bottom: 22vh;
   }
 
+  .divNews {
+    left: 167.5vw;
+    bottom: 33vh;
+  }
+  
+  .News {
+    width: 10vw;
+    height: auto;
+  }
+
+  .buttonpress {
+    height: auto;
+    width: 60px;
+    left: 50%;
+  }
+
   /* slide 3 */
   .slide3-text {
     font-family: "IBM Plex Sans Thai", sans-serif;
@@ -440,16 +523,19 @@ h1 {
     font-size: 2vh;
     text-align: center;
     top: 25%;
+    left: -1.5%;
   }
+
   .Board {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 55vw;
+    width: 25vw;
     height: auto;
-    left: 225vw;
+    left: 240vw;
     bottom: 25vh;
   }
+
   .character33 {
     transform-style: preserve-3d;
     position: absolute;
@@ -470,15 +556,7 @@ h1 {
     text-align: center;
     top: 18%;
   }
-  .newspaperShop {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 60vw;
-    height: auto;
-    left: 316vw;
-    bottom: 25vh;
-  }
+
   .character11 {
     transform-style: preserve-3d;
     position: absolute;
@@ -488,6 +566,7 @@ h1 {
     left: 315vw;
     bottom: 10vh;
   }
+
   .uncleread {
     transform-style: preserve-3d;
     position: absolute;
@@ -498,14 +577,39 @@ h1 {
     bottom: 25vh;
   }
 
-  /* slide 5 */
-  .slide5-text {
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    position: relative;
-    font-size: 2vh;
-    text-align: center;
-    top: 25%;
+  .divnewspaperShop {
+    width: 70vw;
+    height: auto;
+    left: 310vw;
+    bottom: 24vh;
   }
+  
+  .newspaperShop {
+    width: 70vw;
+    height: auto;
+  }
+
+  .buttonpress2 {
+    height: auto;
+    width: 60px;
+    left: 50%;
+  }
+
+  .buttonpress3 {
+    height: auto;
+    width: 60px;
+    left: 50%;
+  }
+
+  /* slide 5 */
+  .textlast {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: absolute;
+    font-size: 2vh;
+    top: 25%;
+    left: 80.5%;
+  }
+
   .vintagetv {
     transform-style: preserve-3d;
     position: absolute;
@@ -517,6 +621,7 @@ h1 {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+
   .character30 {
     transform-style: preserve-3d;
     position: absolute;
@@ -524,29 +629,27 @@ h1 {
     width: 35vw;
     height: auto;
   }
+
   #character301 {
     left: 443vw;
     bottom: 0vh;
   }
+
   #character302 {
     left: 465vw;
     bottom: 5vh;
   }
+
   .start-text-ForUpperone {
     position: absolute;
     transform: translate(50%, 100%);
     font-size: 5vh;
   }
+
   h1 {
     font-size: 100px;
   }
-  .slide3-text {
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    position: relative;
-    font-size: 3vh;
-    top: 18%;
-    left: 0%;
-  }
+
   .btnNext {
     width: 40vw;
     height: auto;

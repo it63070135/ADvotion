@@ -205,23 +205,23 @@ h1 {
 }
 .divpopup1 {
   position: absolute;
-  background-color:red; 
+  /*background-color:red; */
   width: 10%;
   height: 22%;
   top: 0%;
   left: 87%;
   /*transform: translateX(-50%);*/
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 .divpopup2 {
   position: absolute;
-  background-color:blue; 
+  /*background-color:blue; */
   width: 13%;
   height: 23%;
   top: 46%;
   left: 74%;
   /*transform: translateX(-50%);*/
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 .character17 {
   transform-style: preserve-3d;
@@ -409,42 +409,36 @@ h1 {
     top: 18%;
   }
   .shopTv {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
     width: 50vw;
     height: auto;
+    left: -23vw;
+    bottom: 7vh;
+  }
+
+  .divshopTv {
     left: 100vw;
-    bottom: 23vh;
+    bottom: 22vh;
   }
   .shopNews {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
     width: 50vw;
     height: auto;
-    left: 151vw;
-    bottom: 23vh;
+    left: -3vw;
+    bottom: 7vh;
   }
+  .divshopNews{
+    left: 148vw;
+    bottom: 22vh;
+  }
+
   .buttonpress {
-    position: relative;
-    z-index: 200;
-    height: auto;
-    width: 7vw;
-    transform: translate(-50%);
-    left: -150%;
-    /* left:242.5vw; */
-    bottom: -13vh;
+    width: 60px;
+    left: 50%;
+    /* left:242.5vw;
+    bottom: 30vh; */
   }
   .buttonpress1 {
-    position: relative;
-    z-index: 200;
-    height: auto;
-    width: 7vw;
-    transform: translate(-50%);
-    left: 150%;
-    /* left:242.5vw; */
-    bottom: -13vh;
+    width: 60px;
+    left: 50%;
   }
 
   /* slide 3 */
@@ -456,28 +450,28 @@ h1 {
     top: 25%;
   }
   .shopUncleChoke {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 5;
-    width: 100vw;
+    width: 140vw;
     height: auto;
-    left: 220vw;
-    bottom: 20vh;
+    left: -15vw;
+  }
+  .divshopUncleChoke{
+    left: 215vw;
+    bottom: 22vh;
   }
   .character29 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 35vw;
+    width: 45vw;
     height: auto;
-    left: 190vw;
+    left: 195vw;
     bottom: 8vh;
   }
   .character17 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 25vw;
+    width: 35vw;
     height: auto;
     left: 270vw;
     bottom: 20vh;
@@ -490,6 +484,14 @@ h1 {
     height: auto;
     left: 240vw;
     bottom: 5vh;
+  }
+  .buttonpress2 {
+    width: 60px;
+    left: 50%;
+  }
+  .buttonpress3 {
+    width: 60px;
+    left: 50%;
   }
 
   /* slide 4 */
@@ -504,7 +506,7 @@ h1 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 30vw;
+    width: 40vw;
     height: auto;
     left: 340vw;
     bottom: 15vh;
@@ -530,15 +532,10 @@ h1 {
     bottom: 22vh;
   }
   .character24 {
-    transform-style: preserve-3d;
-    position: absolute;
-    z-index: 4;
     width: 120vw;
     height: auto;
     left: 420vw;
-    bottom: -40vh;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    bottom: -30vh;
   }
   .btnNext {
     transform-style: preserve-3d;
