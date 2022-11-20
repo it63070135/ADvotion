@@ -526,14 +526,16 @@ h1 {
     left: -1.5%;
   }
 
-  .Board {
+  .divBoard{
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 25vw;
+    left: 210vw;
+    bottom: 20vh;
+  }
+  .Board {
+    width: 100vw;
     height: auto;
-    left: 240vw;
-    bottom: 25vh;
   }
 
   .character33 {
@@ -629,6 +631,15 @@ h1 {
     width: 35vw;
     height: auto;
   }
+  .character29 {
+    transform-style: preserve-3d;
+    position: absolute;
+    z-index: 5;
+    width: 30vw;
+    height: auto;
+    left: 210vw;
+    bottom: 22vh;
+  }
 
   #character301 {
     left: 443vw;
@@ -658,5 +669,18 @@ h1 {
     transform: translate(-50%, -50%);
     position: relative;
     cursor: pointer;
+  }
+
+  .textpress1 {
+    width: 60px;
+  }
+
+  .buttonpress1 {
+    position: relative;
+    z-index: 20;
+    height: auto;
+    width: 60px;
+    transform: translate(-50%);
+    left: 50%;
   }
 }
