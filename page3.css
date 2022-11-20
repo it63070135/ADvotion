@@ -683,4 +683,14 @@ h1 {
     transform: translate(-50%);
     left: 50%;
   }
+  .textpress3 {
+    position: absolute;
+    z-index: 200;
+    height: auto;
+    width: auto;
+    transform: translateX(-50%) translateY(20%) rotate(180deg);
+    left: 70%;
+    top: 100%;
+    animation: buttonpress3up_down 1s infinite;
+  }
 }

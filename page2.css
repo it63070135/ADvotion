@@ -59,6 +59,51 @@
   text-align: center;
   top: 18%;
 }
+.divbubble1{
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  position: absolute;
+  font-size: 2vh;
+  text-align: center;
+  top: 45vh;
+  left: 345vw;
+  width: 10em;
+  height: auto;
+  transform: translateY(-100%);
+  visibility: visible;
+}
+.bubble1{
+  width: 10em;
+  height: auto;
+  transform: scaleX(-1);
+}
+.text-position-bubble1{
+  position: absolute;
+  top: 45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.divbubble2{
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  position: absolute;
+  font-size: 2vh;
+  text-align: center;
+  top: 50vh;
+  left: 330vw;
+  width: 10em;
+  height: auto;
+  transform: translateY(-100%);
+  visibility: visible;
+}
+.bubble2{
+  width: 10em;
+  height: auto;
+}
+.text-position-bubble2{
+  position: absolute;
+  top: 45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
 .slide5-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: relative;
@@ -147,9 +192,9 @@ h1 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  width: 13vw;
+  width: 32vw;
   height: auto;
-  left: 237vw;
+  left: 228vw;
   bottom: 20vh;
 }
 .aunt {
@@ -186,11 +231,11 @@ h1 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
-  left: 335vw;
+  left: 325vw;
   bottom: 20vh;
 }
 .uncle-4 {
-  width: 13vw;
+  width: 32vw;
   height: auto;
 }
 .character34 {
@@ -401,9 +446,9 @@ h1 {
     transform-style: preserve-3d;
     position: absolute;
     z-index: 5;
-    width: 40vw;
+    width: 95vw;
     height: auto;
-    left: 208vw;
+    left: 183vw;
     bottom: 22vh;
   }
   .aunt {
@@ -434,12 +479,57 @@ h1 {
     text-align: center;
     top: 25%;
   }
+  .divbubble1{
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: absolute;
+    font-size: 1.5vh;
+    text-align: center;
+    top: 45vh;
+    left: 340vw;
+    width: 10em;
+    height: auto;
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  .bubble1{
+    width: 10em;
+    height: auto;
+    transform: scaleX(-1);
+  }
+  .text-position-bubble1{
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .divbubble2{
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    position: absolute;
+    font-size: 1.5vh;
+    text-align: center;
+    top: 50vh;
+    left: 301vw;
+    width: 10em;
+    height: auto;
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  .bubble2{
+    width: 10em;
+    height: auto;
+  }
+  .text-position-bubble2{
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
   .uncle-4 {
-    width: 40vw;
+    width: 95vw;
     height: auto;
   }
   .divuncle-4{
-    left: 310vw;
+    left: 283vw;
     bottom: 22vh;
   }
 
