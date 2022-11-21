@@ -72,15 +72,18 @@
 
             <div class="slide two">
               <div class="divcharacter4">
-                <img @click="showPopup(6, 1)" class="character4" src="pic/character/Character (4).png" />
+                <img
+                  @click="showPopup(6, 1)"
+                  class="character4"
+                  src="pic/character/Character (4).png"
+                />
                 <div class="divBoard">
                   <video
                     class="Board"
                     src="pic/webm/กระดานเรืองแสง+โฆษณาลุง.webm"
                     autoplay
                     loop
-                  >
-                  </video>
+                  ></video>
                   <div @click="showPopup(6, 1)" class="divpopup1">
                     <div class="textpress">
                       <img
@@ -92,7 +95,12 @@
                 </div>
               </div>
               <img class="character2" src="pic/character/Character (2).png" />
-              <video class="rocket" src="pic/webm/rocket.webm" autoplay loop></video>
+              <video
+                class="rocket"
+                src="pic/webm/rocket.webm"
+                autoplay
+                loop
+              ></video>
               <div class="slide2-text">
                 แนวโน้วของโฆษณาในโลกอนาคต<br />อาจมีการโชว์สินค้าด้วย<br />
                 <div class="text-highlight">แว่น VR</div>
@@ -129,7 +137,11 @@
                 loop
               ></video>
               <div class="divcharacter1">
-                <img @click="showPopup(6, 2)" class="character1" src="pic/character/Character (1).png" />
+                <img
+                  @click="showPopup(6, 2)"
+                  class="character1"
+                  src="pic/character/Character (1).png"
+                />
                 <div class="textpress1">
                   <img
                     class="buttonpress1"
@@ -137,7 +149,6 @@
                   />
                 </div>
               </div>
-
             </div>
 
             <div class="slide five">
@@ -187,9 +198,8 @@
             font-family: IBM Plex Sans Thai, sans-serif;
             letter-spacing: 2px;
           "
-          ><img
-          class="Homeicon" src="pic/first_page/home-icon.svg"
-          />&nbsp;Home page</a
+          ><img class="Homeicon" src="pic/first_page/home-icon.svg" />&nbsp;Home
+          page</a
         >
         <div class="fakeHR"></div>
         <a
@@ -329,18 +339,20 @@
     </div>
     <div id="popup" class="popup" v-if="showingPopup">
       <div @click="closePopup()" class="popupBG"></div>
-  
+
       <div class="popupCard">
-        <img :src="showingIMG" class="popupImg" :style="showingRotate"/><br>
+        <img :src="showingIMG" class="popupImg" :style="showingRotate" /><br />
         <div class="popupHeader">
-          <span>
-            {{showingHeader}}</span>
-        </div><br>
-        <span class="popupContent">
-          {{showingContent}}</span>
-        <img class="popupExit" @click="closePopup()" src="pic/button/exitBtn.png" />
+          <span> {{showingHeader}}</span>
+        </div>
+        <br />
+        <span class="popupContent"> {{showingContent}}</span>
+        <img
+          class="popupExit"
+          @click="closePopup()"
+          src="pic/button/exitBtn.png"
+        />
       </div>
-  
     </div>
   </body>
   <script src="script.js"></script>
