@@ -59,7 +59,7 @@
   text-align: center;
   top: 18%;
 }
-.divbubble1{
+.divbubble1 {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: absolute;
   font-size: 2vh;
@@ -71,18 +71,18 @@
   transform: translateY(-100%);
   visibility: visible;
 }
-.bubble1{
+.bubble1 {
   width: 10em;
   height: auto;
   transform: scaleX(-1);
 }
-.text-position-bubble1{
+.text-position-bubble1 {
   position: absolute;
   top: 45%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.divbubble2{
+.divbubble2 {
   font-family: "IBM Plex Sans Thai", sans-serif;
   position: absolute;
   font-size: 2vh;
@@ -94,15 +94,15 @@
   transform: translateY(-100%);
   visibility: visible;
 }
-.bubble2{
+.bubble2 {
   width: 10em;
   height: auto;
 }
-.text-position-bubble2{
+.text-position-bubble2 {
   position: absolute;
   top: 45%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .slide5-text {
   font-family: "IBM Plex Sans Thai", sans-serif;
@@ -227,7 +227,7 @@ h1 {
   left: 360vw;
   bottom: 20vh;
 }
-.divuncle-4{
+.divuncle-4 {
   transform-style: preserve-3d;
   position: absolute;
   z-index: 5;
@@ -479,7 +479,7 @@ h1 {
     text-align: center;
     top: 25%;
   }
-  .divbubble1{
+  .divbubble1 {
     font-family: "IBM Plex Sans Thai", sans-serif;
     position: absolute;
     font-size: 1.5vh;
@@ -491,18 +491,18 @@ h1 {
     transform: translateY(-100%);
     visibility: visible;
   }
-  .bubble1{
+  .bubble1 {
     width: 10em;
     height: auto;
     transform: scaleX(-1);
   }
-  .text-position-bubble1{
+  .text-position-bubble1 {
     position: absolute;
     top: 45%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  .divbubble2{
+  .divbubble2 {
     font-family: "IBM Plex Sans Thai", sans-serif;
     position: absolute;
     font-size: 1.5vh;
@@ -514,21 +514,21 @@ h1 {
     transform: translateY(-100%);
     visibility: visible;
   }
-  .bubble2{
+  .bubble2 {
     width: 10em;
     height: auto;
   }
-  .text-position-bubble2{
+  .text-position-bubble2 {
     position: absolute;
     top: 45%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .uncle-4 {
     width: 95vw;
     height: auto;
   }
-  .divuncle-4{
+  .divuncle-4 {
     left: 283vw;
     bottom: 22vh;
   }
@@ -659,5 +659,4 @@ h1 {
     transform: scaleX(-1);
     visibility: hidden;
   }
-
 }

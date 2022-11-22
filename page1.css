@@ -210,11 +210,22 @@
   bottom: 15vh;
   left: 405vw;
 }
-
-.billboard {
+.divbillboard {
   position: absolute;
   bottom: 15vh;
   left: 419vw;
+}
+.billboard {
+  width: 15vw;
+  height: auto;
+}
+
+.ad1 {
+  position: absolute;
+  width: 11vw;
+  top: 22%;
+  left: 50%;
+  transform: skewX(2deg) rotateY(10deg) translate(-50%, -50%);
 }
 
 .vintagetv {
@@ -414,13 +425,14 @@
     left: 403vw;
     bottom: 23vh;
   }
-
-  .billboard {
+  .divbillboard {
     position: absolute;
-    width: 50vw;
-    height: auto;
     left: 430vw;
     bottom: 23vh;
+  }
+  .billboard {
+    width: 50vw;
+    height: auto;
   }
 
   .vintagetv {
@@ -496,6 +508,15 @@
     left: 475vw;
     bottom: 20vh;
     visibility: hidden;
+  }
+
+  .ad1 {
+    position: absolute;
+    width: 40vw;
+    height: auto;
+    top: 22%;
+    left: 50%;
+    transform: skewX(2deg) rotateY(10deg) translate(-50%, -50%);
   }
   h1 {
     font-size: 100px;
